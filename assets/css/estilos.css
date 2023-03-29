@@ -13,6 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    perspective: 300px;
 }
 .galaxy, .galaxy2{
     position: absolute;
@@ -36,10 +37,13 @@ body{
     position: relative;
     width: 60vw;
     height: 80vh;
-    border: 1px solid var(--colorPrimario);
     border-radius: 2rem;
     overflow: hidden;
     transition: .5s;
+    
+}
+.caja:hover{
+    transform: rotatey(3deg);
 }
 
 /*======= Sector izquierdo =============*/
@@ -55,7 +59,6 @@ body{
 }
 .img{
     border-radius: 50%;
-    border: 1px solid var(--colorPrimario);
 }
 .atributos{
     font-size: 1.5rem;
