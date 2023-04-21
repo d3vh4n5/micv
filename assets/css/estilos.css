@@ -12,13 +12,14 @@
 }
 :root{
     font-size: 16px;
-    --colorFondo: white;
+    --colorFuenteGeneral: #FBFFF1;
     --colorAcento: tomato;
     --colorFuente: rgb(79, 79, 231);
     --fondoGlass: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(214, 214, 214, 0.2));
     --blurFondo: blur(10px);
 }
 body{
+    color: var(--colorFuenteGeneral);
     background-image: url(../img/rm373batch2-08.jpg);
     background-size: cover;
     background-position: 50%;
@@ -91,7 +92,7 @@ a:hover{
 }
 .mostrar-menu{
     order:1;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--colorFuenteGeneral);
     border-radius: 5px;
     padding: 0 10px;
 }
@@ -147,7 +148,7 @@ section{
 .yo{
     width: 20rem;
     border-radius: 6rem;
-    border: 7px white;
+    border: 7px var(--colorFuenteGeneral);
     border-style: double
 }
 .texto{
@@ -164,13 +165,13 @@ section{
 .titulos{
     margin: 2rem auto;
     font-size: 3rem;
-    color: aliceblue;
+    color: var(--colorFuenteGeneral);
 }
 .texto h3{
     color: var(--colorAcento);
 }
 .texto p{
-    color: aliceblue;
+    color: var(--colorFuenteGeneral);
     font-size: 1.05rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -262,7 +263,7 @@ section{
     backdrop-filter: var(--blurFondo);
     padding: 2rem;
     border-radius: 10px;
-    color: aliceblue;
+    color: var(--colorFuenteGeneral);
 }
 .cuatro form{
     display: flex;
@@ -296,6 +297,7 @@ section{
 
 /*=========FOOTER===========*/
 footer{
+    color: black;
     background: #e7e7e7;
     height: 50%;
     display: flex;
