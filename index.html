@@ -4,114 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portflio</title>
+    <title>Portfolio Juan Basgall</title>
+    <!--
+        https://cdnjs.com/libraries/font-awesome
+        https://fontawesome.com/icons
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/icons/Hanslogo2.ico">
 </head>
 <body>
-    <video autoplay muted loop preload src="./assets/img/galaxy.mp4" class="galaxy"></video>
-    <video autoplay muted loop preload src="./assets/img/galaxy.mkv" class="galaxy2"></video>
-    <!--<div class="bolita"></div>
-        <div class="bolita-dos"></div>
-        <div class="bolita-tres"></div>
-        <div class="bolita-cuatro"></div>
-        <div class="bolita-cinco"></div>-->
-    <div class="caja">
-        <nav class="barraizquierda">
-            <img class="img" height="200px" width="200px" src="./assets/img/perfil2.jpg" alt="">
-            <div class="atributos">HTML-CSS-JS</div>
-            <div class="atributos">Vue</div>
-            <div class="atributos">PHP</div>
-            <div class="atributos">Python</div>
-            <div class="contacto">
-                <div class="contenedorLink">
-                    <a href="https://mercadolan.000webhostapp.com/SmartCV/index.php" class="link">
-                        Proyectos
-                    </a>
-                </div>
-            </div>
+    <header>
+        <h1>d3vh4n5</h1>
+        <input type="checkbox" id="check">
+        <label for="check"  class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#carrera">Conocimientos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">contacto</a></li>
+            </ul>
+            <label for="check"  class="esconder-menu">
+                &#215
+            </label>
         </nav>
-        <div class="derecha">
-            <div class="title">
-                <h1>Juan Angel Basgall</h1>
-                <h4><i>Estudiante de programación | Diseñador UX-UI</i></h4>
+    </header>
+    <main>
+        <section class="uno" id="inicio">
+            <img src="./assets/img/yo4.jpeg" alt="foto de Juan" class="yo">
+            <div class="texto">
+                <p>Bienvenid@</p>
+                <h2 class="titulos">Juan Angel Basgall</h2>
+                <h3><i>Desarrollador de software | Diseñador UX-UI</i></h3>
+                <br>
+                <p>¡Hola! Soy Juan, soy estudiante de la "Tecnicatura superior en programacion" en <a href="https://www.teclab.edu.ar/">Teclab</a>, y recibido del curso de UX - UI de <a href="https://buenosaires.gob.ar/educacion/codo-codo-40">Codo a Codo</a>.</p>
             </div>
-            <section>
-                <div class="botonesPrincipales experiencia">
-                    <h2>Experiencia Laboral</h2>
-                <p class="pexperiencia">
-                    -> Operador de Minipala cargadora, chofer de camión chasis 
-                    volcador y semirremolque volcador. (Campana, Bs As- Desde 2012/ 
-                    actualidad)<br>
-                    <br>
-                    -> Pyme personal con transportes propios. Gestión administrativa y 
-                    operaciones.<br>
-                    Tareas a desarrollar:<br>
-                    - Atención a clientes<br>
-                    - Presupuestos<br>
-                    - Compra de insumos <br>
-                    - Operación de trabajos: manejo de transportes y maquinarias<br>
-                    <br>
-                    -> Operador de Retroescavadora. (Cantera BuKlos SRL, Campana, 
-                    Bs As. – Desde 2010 hasta el 2012)
-                </p>
-                </div>
-                <div class="botonesPrincipales formacion">
-                    <h2>Formación</h2>
-                    <p class="pformacion">
-                        -> Técnico en Electrónica: Escuela técnica N°1 Luciano Reyes 
-(Ciudad de Campana)
-Secundario completo/ Primario completo
-<br>
-<br>
--> Diseñador UX UI egresado en 2022 del programa "Codo a Codo" 
-en el cual se realizo un proyecto integral cumpliendo las siguientes 
-tareas: Research, benchmarking, user persona y entrevistas, POV/
-MVP, arquitectura de Información, user flow, prototipo, patrones de 
-diseño, prototipo funcional, métricas, pruebas de usabilidad, atomic 
-design, grillas, estándares y guidelines, color, tipografía, branding, 
-logo, alta fidelidad, accesibilidad, motion, elevator pitch y 
-heurísticas.
-<br>
-<br>
--> Tecnicatura Superior en programación - Cursando el primer año: 
-Cursadas las materias de Lógica de programación, Administración 
-del tiempo y del trabajo, Bases de datos, Experiencia de Usuario, 
-gestión de la configuración, gestión operativa en la nube, 
-programación web y gestión de personas.
-<br>
-<br>
--> Curso Big Data 2022 programa “Codo a Codo”. En este curso 
-tuvimos un paneo general de lo que es Lógica, SQL, Python, TKinter, 
-Google Data Studio y algunos frameworks de Python.
-<br>
-<br>
- Completado el curso de “Programación web con JavaS#ript” 
-modalidad a distancia ditado por la UTN Facultad Regional de 
-Resistencia (2022).
-<br>
-<br>
--> Estudié de manera autodidacta durante el 2021 los lenguajes de 
-HTML, CSS y JavaScript de algunos canales de Youtube.
-                    </p>
-                </div>
-                <div class="botonesPrincipales otros">
-                    <h2>Otros Conocimientos</h2>
-                    <p class="potros">
-                        Inglés: Nivel Upper Intermediate.<br>
--> Particular Rosa Fidalgo Nivel Intermedio Superior (6to año 
-aprobado con el libro “Inside Out”)<br>
--> Instituto CAI Educativa Nivel Básico<br>
-<br>
--> Microsoft Office: Nivel intermedio<br>
-Word/ Excel /Power Point<br>
-                    </p>
-                </div>
-            </section>
-        </div>
-        
-    </div>
-    
-
-<script src="./assets/js/codigo.js"></script>
+        </section>
+        <section class="dos" id="carrera">
+            <div class="contenedorConocimientos">
+                <h2 class="titulos">Conocimientos</h2>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                    <li><i class="fa-brands fa-square-js"></i> JavaScript</li>
+                    <li><i class="fa-brands fa-php"></i> PHP</li>
+                    <li><i class="fa-brands fa-python"></i> Python</li>
+                    <li><i class="fa-regular fa-gem"></i> Ruby</li>
+                    <li><i class="fa-brands fa-figma"></i> Figma</li>
+                    <li><i class="fa-solid fa-database"></i> SQL</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+        </section>
+        <section class="tres" id="proyectos">
+            <h2 class="titulos">Proyectos</h2>
+            <div class="contenedorTarjetas">
+                <a class="tarjeta" href="https://mercadolan.000webhostapp.com/backend/acerca_de.php" target="_blank">
+                    <img class="imgTarjeta" src="./assets/img/mercadolan.png" alt="">
+                    <div class="descripcionTarjeta">
+                        <h4>"Mercado Lan"</h4>
+                        <p>e-commerce de prueba desarrollado en PHP.</p>
+                    </div>
+                </a>
+                <a class="tarjeta" href="https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link" target="_blank">
+                    <img class="imgTarjeta" src="./assets/img/arbeit.png" alt="">
+                    <div class="descripcionTarjeta">
+                        <h4>"Arbeit"</h4>
+                        <p>Diseño UX-UI de una aplicación móvil dedicada a la busqueda y oferta de empleo.</p>
+                    </div>
+                </a>
+                <a class="tarjeta" href="https://d3vh4n5.pythonanywhere.com/core/" target="_blank">
+                    <img class="imgTarjeta" src="./assets/img/crudalumnos.png" alt="">
+                    <div class="descripcionTarjeta">
+                        <h4>Django</h4>
+                        <p>Mini proyecto de pruebas para aprender Django.</p>
+                    </div>
+                </a>
+                <a class="tarjeta" href="./assets/files/crud.zip" download>
+                    <img class="imgTarjeta" src="./assets/img/crudcacpython.png" alt="">
+                    <div class="descripcionTarjeta">
+                        <h4>CRUD</h4>
+                        <p>Este es unn CRUD de escritorio desarrollado en python durante el curso de Big-Data de codo a codo.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="cuatro" id="contacto">
+            <form action="">
+                <h2 class="titulos">CONTACTO</h2>
+                <label for="">Mail</label>
+                <input type="email" id="email">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                <button type="submit" class="pulso" onclick="sendEmail()">Enviar</button>
+            </form>
+        </section>
+        <footer>
+            <div class="redes">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/juanangelbasgall/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/d3vh4n5"><i class="fa-brands fa-github"></i></a></li>
+                    <!--
+                    <li><a href=""><i class="fa-brands fa-square-behance"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-basketball"> Dribbble</i></a></li>
+                    -->
+                    <li><a href="https://wa.me/+543489553144" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <p>Designed and developed by Juan Angel Basgall (<a href="#inicio" class="linkFooter">d3vh4n5</a>) Copyright © 2023 d3vh4n5 λ.</p>
+        </footer>
+    </main>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

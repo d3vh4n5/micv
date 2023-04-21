@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            height: 100vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        :root{
+            --colorAcento: yellowgreen;
+        }
+        .contenedorBotonPrincipal{
+            background-color: rgba(0, 255, 255, 0.075);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid var(--colorAcento);
+            border-radius: 10px;
+            color: var(--colorAcento);
+            text-align: center;
+            font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
+            font-weight: 500;
+        }
+        .elementosBoton{
+            user-select: none;
+            margin: 0;
+            overflow: hidden;
+            width: 500px;
+            transition: 1s;
+            border: 1px solid red;
+        }
+        .uno{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dos{
+            height: 0px;
+            text-align: left;
+        }
+        #activadorBoton[type="checkbox"]{
+            -webkit-appearance: none;
+            display: none;
+        }
+        #activadorBoton[type="checkbox"]:checked  ~ .uno{
+            background-color: darkblue;
+        }
+        #activadorBoton[type="checkbox"]:checked ~ .dos{
+            border-radius: 20px;
+            width: 700px;
+            height: 250px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <label class="contenedorBotonPrincipal">
+        <input type="checkbox" id="activadorBoton">
+        <h4 class="elementosBoton uno">Experiencia Laboral</h4>
+        <ul class="elementosBoton dos">
+            <li>Operador de Minipala cargadora, chofer de camión chasis volcador y semirremolque volcador. (Campana, Bs As- Desde 2012/ actualidad)</li>
+            <br>
+            <li>Pyme personal con transportes propios. Gestión administrativa y operaciones.
+                Tareas a desarrollar:
+                <ul>
+                    <li>Atención a clientes</li>
+                    <li>Presupuestos</li>
+                    <li>Compra de insumos</li>
+                    <li>Operación de trabajos: manejo de transportes y maquinarias</li>
+                </ul>
+            </li>
+            <br>
+            <li>Operador de Retroescavadora. (Cantera BuKlos SRL, Campana, Bs As. – Desde 2010 hasta el 2012)</li>
+        </ul>
+    </label>
+    <label class="contenedorBotonPrincipal">
+        <input type="checkbox" id="activadorBoton">
+        <h4 class="elementosBoton uno"> Texto </h4>
+        <ul class="elementosBoton dos">
+            <li>texto</li>
+            <li>texto</li>
+            <li>texto</li>
+        </ul>
+    </label>
+    <label class="contenedorBotonPrincipal">
+        <input type="checkbox" id="activadorBoton">
+        <h4 class="elementosBoton uno"> Texto </h4>
+        <ul class="elementosBoton dos">
+            <li>texto</li>
+            <li>texto</li>
+            <li>texto</li>
+        </ul>
+    </label>
+</body>
+</html>
