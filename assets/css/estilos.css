@@ -169,6 +169,7 @@ section{
 }
 .texto h3{
     color: var(--colorAcento);
+    text-align: center;
 }
 .texto p{
     color: var(--colorFuenteGeneral);
@@ -392,6 +393,9 @@ footer i{
     }
     .yo, .texto{
         margin: 2rem;
+    }
+    .texto{
+        width: 100%;
     }
     .contenedorConocimientos, .cuatro form{
         background: var(--fondoGlass);
