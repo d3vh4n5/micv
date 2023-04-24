@@ -1,3 +1,22 @@
+'use strict'
+
+let optionMenu = document.getElementsByClassName('optionMenu');
+
+for (let option of optionMenu){
+  option.addEventListener('click', ()=>{
+    document.getElementById('check').checked = false;
+  });
+}
+/*
+const links = document.querySelectorAll('.menu a');
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('check').checked = false;
+  });
+});
+*/
+
 /* Usar un mail alternativo para recibir estas consultas, no usar el mail normal */
 function sendEmail() {
     const name = document.getElementById("name").value;

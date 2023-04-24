@@ -112,11 +112,11 @@ main{
     height: 100%;
 }
 main::-webkit-scrollbar{
-    width: .7rem;
+    width: .5rem;
     background-color: rgba(0, 0, 0, 1);
 }
 main::-webkit-scrollbar-thumb{
-    background-color: rgb(17, 20, 51);
+    background-color: rgb(39, 39, 39);
     border-radius: 10px;
 }
 section{
