@@ -162,8 +162,7 @@ section{
 .yo{
     width: 20rem;
     border-radius: 6rem;
-    border: 7px var(--colorFuenteGeneral);
-    border-style: double
+    border: 7px double var(--colorFuenteGeneral);
 }
 .texto{
     padding: 2rem;
@@ -424,6 +423,11 @@ footer a{
     }
     .yo, .texto{
         margin: 2rem;
+    }
+    .yo{
+        width: 15rem;
+        border-radius: 3rem;
+        border: 4px double var(--colorFuenteGeneral);
     }
     .texto{
         width: 100%;
