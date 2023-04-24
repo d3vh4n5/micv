@@ -304,7 +304,7 @@ section{
     height: 2.5rem;
 }
 .cuatro input, textarea, label{
-    padding: 0 5px;
+    padding: 10px 5px 0;
 }
 .cuatro label{
     font-size: 1rem;
@@ -373,6 +373,8 @@ footer a{
     .mostrar-menu,
     .esconder-menu{
         display: block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
     }
     .mostrar-menu{
         position: absolute;
@@ -407,8 +409,8 @@ footer a{
     }
     .esconder-menu{
         position: absolute;
-        top: -8px;
-        right: 18px;
+        top: 0px;
+        right: 15px;
     }
     .block-scroll{overflow:hidden;}
     #check:checked ~ .menu{
@@ -453,6 +455,13 @@ footer a{
     }
     .cuatro form{
         width: 100%;
+        font-size: 2rem;
+    }
+    .cuatro > form input, button{
+        height: 4rem;
+    }
+    .cuatro > form input, textarea, button, form label{
+        font-size: 1.3rem !important;
     }
 }
 .pulso{

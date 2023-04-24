@@ -2,6 +2,7 @@
 
 const optionMenu = document.getElementsByClassName('optionMenu');
 const checkButton = document.getElementById('check');
+const darkScreen = document.getElementById('darkScreen')
 
 for (let option of optionMenu){
   option.addEventListener('click', ()=>{
@@ -16,6 +17,10 @@ checkButton.addEventListener('change', () => {
     darkScreen.classList.remove('darkScreen');
   }
 });
+darkScreen.addEventListener('click', ()=>{
+  checkButton.checked = false;
+  darkScreen.classList.remove('darkScreen');
+})
 /*
 const links = document.querySelectorAll('.menu a');
 
