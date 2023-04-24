@@ -1,12 +1,21 @@
 'use strict'
 
-let optionMenu = document.getElementsByClassName('optionMenu');
+const optionMenu = document.getElementsByClassName('optionMenu');
+const checkButton = document.getElementById('check');
 
 for (let option of optionMenu){
   option.addEventListener('click', ()=>{
-    document.getElementById('check').checked = false;
+    checkButton.checked = false;
+    darkScreen.classList.remove('darkScreen');
   });
 }
+checkButton.addEventListener('change', () => {
+  if (checkButton.checked) {
+    darkScreen.classList.add('darkScreen');
+  } else {
+    darkScreen.classList.remove('darkScreen');
+  }
+});
 /*
 const links = document.querySelectorAll('.menu a');
 
