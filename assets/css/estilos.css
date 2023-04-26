@@ -43,7 +43,7 @@ a:hover{
 /*
 informacion de como hizo el chico el fondo de su portfolio:
 .contenedor-skills3 {
-    background: linear-gradient(#02be98,hsla(0,3%,73%,.8)),url(/static/media/fondo-skills.034754b….jpg);
+    background: linear-gradient(#02be98,hsla(0,3%,73%,.8)),url(../img/rm373batch2-08.jpg);
     background-attachment: fixed;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -310,7 +310,11 @@ section{
     position: absolute;
     padding: 15px;
     bottom: -120px;
-    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(122, 122, 122, 0.3));
+    background: linear-gradient(to right bottom,transparent, transparent 50%,rgba(255, 99, 71, 0.7));
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     -webkit-backdrop-filter: var(--blurFondo);
     backdrop-filter: var(--blurFondo);
     color: var(--colorFuenteGeneral);
@@ -369,8 +373,6 @@ section{
     padding: 2rem;
     border-radius: 10px;
     color: var(--colorFuenteGeneral);
-}
-.cuatro form{
     display: flex;
     flex-direction: column;
 }
@@ -395,7 +397,11 @@ section{
 .cuatro button{
     color: var(--colorAcento);
     text-transform: uppercase;
-    background: transparent;
+    background: linear-gradient(to right bottom,transparent, transparent 50%,rgba(255, 99, 71, 0.7)),url(../img/rm373batch2-08.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid var(--colorAcento);
     font-weight: 600;
 }
@@ -405,9 +411,13 @@ section{
     color: var(--colorFuenteGeneral);
     animation: pulso 10s 9999s;
 }
-
-
-
+.cuatro button p{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
 /*=========FOOTER===========*/
 footer{
     color: black;
@@ -594,7 +604,6 @@ footer a{
         padding: 10px;
         font-size: 1.2rem;
         bottom: 0px;
-        background: linear-gradient(to right, rgba(4, 5, 26, 0.788), rgba(202, 97, 10, 0.3));
     }
     .imgTarjeta{
         filter: grayscale(0);

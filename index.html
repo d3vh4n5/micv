@@ -97,6 +97,15 @@
                         <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
                     </div>
                 </a>
+                <a class="tarjeta" href="http://bit.ly/linkscv" target="newwindow" onclick="window.open('http://bit.ly/linkscv', 'newwindow', 'width=800, height=600'); return false;">
+                    <img class="imgTarjeta" src="./assets/img/scv.png" alt="">
+                    <div class="descripcionTarjeta">
+                        <h4>Redireccionador CV</h4>
+                        <p>Mini Web App de registros y redirección con estilo retro. Hace uso del método GET para obtener información y tegistrarla en la DB.</p>
+                        <p>Host: Temporal ⚠️</p>
+                        <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
+                    </div>
+                </a>
                 <a class="tarjeta react" href="https://d3vh4n5-reactlearn.netlify.app/" target="_blank">
                     <img class="imgTarjeta" src="./assets/img/reactweb.png" alt="">
                     <div class="descripcionTarjeta">
@@ -117,7 +126,7 @@
                 <input type="text" id="name" name="name" required><br>
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" cols="30" rows="10" required></textarea>
-                <button type="submit" class="btn pulso" onclick="sendEmail()" alt="Enviar mail">Enviar</button>
+                <button type="submit" class="btn" onclick="sendEmail()" alt="Enviar mail"><p class="pulso">Enviar</p></button>
             </form>
         </section>
         <footer>
