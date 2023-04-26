@@ -85,8 +85,9 @@ li{
     text-transform: uppercase;
 }
 .contacto{
-    background: linear-gradient(to right bottom, yellowgreen, var(--colorFuente));
+    background-image: linear-gradient(to right bottom, yellowgreen, var(--colorFuente));
     font-weight: 900;
+    background-color: var(--colorFuente);
 
     color: transparent;
     -webkit-text-fill-color: transparent;
