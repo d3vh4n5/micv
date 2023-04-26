@@ -25,7 +25,7 @@ darkScreen.addEventListener('click', ()=>{
 const cambiarFondo = document.querySelectorAll('.descripcionTarjeta, .btn');
 console.log(cambiarFondo);
 if (/iPhone/i.test(navigator.userAgent)) {
-  alert('Estas en un iphone');
+  //alert('Estas en un iphone');
   for (let e of cambiarFondo){
       e.classList.add('fondo-grad');
   }
