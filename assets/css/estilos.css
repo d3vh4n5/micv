@@ -320,6 +320,21 @@ section{
 .descripcionTarjeta h4{
     color: var(--colorAcento);
 }
+.status{
+    background-color: rgb(10, 10, 10);
+    color: lightgrey;
+    text-shadow: 1px 1px 1px lightgrey;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.finalizado{
+    color: green;
+    text-shadow: 1px 1px 1px green;
+}
+.trabajando{
+    color: orange;
+    text-shadow: 1px 1px 1px orange;
+}
 .tarjeta:hover{
     filter: opacity(1);
 }
