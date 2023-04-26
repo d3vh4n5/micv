@@ -21,6 +21,14 @@ darkScreen.addEventListener('click', ()=>{
   checkButton.checked = false;
   darkScreen.classList.remove('darkScreen');
 })
+
+const cambiarFondo = document.querySelectorAll('.descripcionTarjeta, .btn');
+console.log(cambiarFondo);
+if (/iPhone/i.test(navigator.userAgent)) {
+  for (let e of cambiarFondo){
+      e.classList.add('.fondo-grad');
+  }
+}
 /*
 const links = document.querySelectorAll('.menu a');
 

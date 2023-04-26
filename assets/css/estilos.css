@@ -309,8 +309,8 @@ section{
 .descripcionTarjeta{
     position: absolute;
     padding: 15px;
-    bottom: -120px;
-    background: linear-gradient(to right bottom,transparent, transparent 50%,rgba(255, 99, 71, 0.7));
+    bottom: -150px;
+    background: linear-gradient(to right bottom,rgba(0, 0, 0, 0.4) 30%,rgba(255, 99, 71, 0.7));
     background-attachment: fixed;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -457,6 +457,11 @@ footer a{
 
 .btn:hover:after, .linkFooter:hover::after{
     animation: appear .5s 1.5s forwards 1;
+}
+
+/* Clases estáticas */
+.fondo-grad{
+    background: var(--colorFondoMenu) !important;
 }
 
 /*==============
