@@ -17,6 +17,7 @@
     --colorFuente: rgb(79, 79, 231);
     --fondoGlass: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(214, 214, 214, 0.2));
     --blurFondo: blur(10px);
+    --colorGradBoton: linear-gradient(45deg, yellowgreen, var(--colorFuente));
 }
 body{
     color: var(--colorFuenteGeneral);
@@ -61,9 +62,9 @@ header{
     z-index: 100;
 }
 h1{
-    background: url(../img/giphy4.gif);
     opacity: .8;
     color: var(--colorAcento);
+    text-shadow: 1px 1px 2px var(--colorFuenteGeneral);
     padding: 5px 30px;
     display: flex;
     align-items: center;
@@ -75,38 +76,68 @@ nav{
 }
 ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 li{
     all: unset;
     margin: 5px 20px;
 }
-.menu a{
+.optionMenu{
     all: unset;
     text-transform: uppercase;
 }
 .contacto{
-    background-image: linear-gradient(to right bottom, yellowgreen, var(--colorFuente));
+    color: blueviolet;
+    height: 7%;
+    width: 80%;
+    border-radius: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--colorGradBoton);
+    overflow: hidden;
+    padding: 2px;
+}
+.link{
+    padding: 0 20px;
     font-weight: 900;
-    background-color: var(--colorFuente);
-
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-
+    background-image: var(--colorGradBoton);
+    /* alternativa por si no funciona en algun navegador */
+    background-color: white;
+    /*acomododo el fondo al texto, bwekit y mox son para compatibilidades*/
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
+
+    color: transparent;
+    /* Por si no funciona el color transparent, agrego compatibilidades:*/
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+.contenedorLink{
+    background-image: url("../img/giphy4.gif");
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
 }
 .contacto:hover{
-    background: var(--colorAcento);
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    color: var(--colorAcento);
+    border: 1px solid var(--colorAcento);
+    background: var(--colorFondo);
+    box-shadow: 0 0 150pc 3px rgba(230, 199, 173, 0.3);
+    cursor: pointer;
+    transition: 0.2s;
 }
+.contacto:hover .link{
+    background-image: linear-gradient(var(--colorAcento), var(--colorAcento));
+}
+.contacto:hover .contenedorLink{
+    background-image: var(--colorFondo);
+}
+
 .mostrar-menu,
 .esconder-menu{
     margin: 0;
