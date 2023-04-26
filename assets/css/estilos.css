@@ -327,6 +327,15 @@ section{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
+.react p{
+    background: none;
+    color: green;
+    text-shadow: 1px 1px 1px green;
+}
+.content{
+    color: lightgray;
+    text-shadow: 1px 1px 1px lightgray;
+}
 .finalizado{
     color: green;
     text-shadow: 1px 1px 1px green;
