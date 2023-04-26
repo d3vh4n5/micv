@@ -26,7 +26,7 @@
                 <li class="optionMenu"><a href="#inicio">Inicio</a></li>
                 <li class="optionMenu"><a href="#carrera">Conocimientos</a></li>
                 <li class="optionMenu"><a href="#proyectos">Proyectos</a></li>
-                <li class="optionMenu"><a href="#contacto">contacto</a></li>
+                <li class="optionMenu contacto"><a href="#contacto">contacto</a></li>
             </ul>
             <label for="check"  class="esconder-menu">
                 &#215
@@ -97,12 +97,12 @@
             <form action="">
                 <h2 class="titulos">CONTACTO</h2>
                 <label for="">Mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name"><br>
+                <input type="text" id="name" name="name" required><br>
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" cols="30" rows="10"></textarea>
-                <button type="submit" class="pulso" onclick="sendEmail()">Enviar</button>
+                <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+                <button type="submit" class="btn pulso" onclick="sendEmail()" alt="Enviar mail">Enviar</button>
             </form>
         </section>
         <footer>
@@ -117,7 +117,7 @@
                     <li><a href="https://wa.me/+543489553144" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
                 </ul>
             </div>
-            <p>Designed and developed by Juan Angel Basgall (<a href="#inicio" class="linkFooter">d3vh4n5</a>) Copyright © 2023 d3vh4n5 λ.</p>
+            <p>Designed and developed by Juan Angel Basgall (<a href="#inicio" class="linkFooter" alt="Sitio web del desarrollador">d3vh4n5</a>) Copyright © 2023 d3vh4n5 λ.</p>
         </footer>
     </main>
     <script src="./assets/js/main.js"></script>

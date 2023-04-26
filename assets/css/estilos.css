@@ -84,6 +84,28 @@ li{
     all: unset;
     text-transform: uppercase;
 }
+.contacto{
+    background: linear-gradient(to right bottom, yellowgreen, var(--colorFuente));
+    font-weight: 900;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+.contacto:hover{
+    background: var(--colorAcento);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
 .mostrar-menu,
 .esconder-menu{
     margin: 0;
@@ -161,6 +183,7 @@ section{
 }
 .yo{
     width: 20rem;
+    object-fit: cover;
     border-radius: 6rem;
     border: 7px double var(--colorFuenteGeneral);
 }
@@ -243,6 +266,7 @@ section{
 .imgTarjeta{
     margin: 0px;
     width: auto;
+    object-fit: cover;
     filter: grayscale(1);
     transition: all .5s;
 }
@@ -316,9 +340,13 @@ section{
     font-weight: 600;
 }
 .cuatro button:hover{
+    cursor: pointer;
     background-color: var(--colorAcento);
     color: var(--colorFuenteGeneral);
+    animation: pulso 10s 9999s;
 }
+
+
 
 /*=========FOOTER===========*/
 footer{
@@ -339,6 +367,31 @@ footer a{
     color: rgb(44, 44, 44);
     font-weight: 600;
 }
+
+/*xxxxxxxxxxxxxxx after y EFECTOS HOVER xxxxxxxxxxxxxxxxxx*/
+.btn::after, .linkFooter:after{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 4px;
+    font-size: .8rem;
+    color: transparent;
+    user-select: none;
+    content: attr(alt);
+    white-space: nowrap;
+    border-radius: 6px;
+    text-shadow: none;
+    text-transform: none;
+    position: absolute;
+    right: 0px;
+    top: -2.5rem;
+}
+
+.btn:hover:after, .linkFooter:hover::after{
+    animation: appear .5s 1.5s forwards 1;
+}
+
+/*==============
+    RESPONSIVE
+  ==============*/
 
 @media (max-width: 1200px) {
     header{
@@ -361,7 +414,7 @@ footer a{
     .cuatro form{
         width: 70%;
     }
-
+    
 }
 @media (max-width: 700px){
     :root{
@@ -471,6 +524,19 @@ footer a{
 .pulso{
     animation: pulso 4s 1s ease-out infinite
 }
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxx animaciones xxxxxxxxxxxxxxxxxxxx*/
+@keyframes appear {
+  0%{
+      filter: blur(80px);
+  }
+  100%{
+      background: rgba(22, 22, 22, 0.9);
+      color: silver;
+      text-shadow: 0 0 1px var(--colorFuenteGeneral);
+      border: 2px solid rgb(37, 37, 37);
+  }
+  
+}
 @keyframes cambiarColor{
     0%{
         color: yellow;
@@ -483,12 +549,12 @@ footer a{
     }
 }
 @keyframes pulso {
-	0%{
+    0%{
 		transform: scale(1.01);
 	}
-
+    
 	5%{
-		transform: scale(1);
+        transform: scale(1);
 		box-shadow: 0px 0px 5px 3px rgba(173, 216, 230, 0.74);
 	}
 	60%{
