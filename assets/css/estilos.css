@@ -12,12 +12,15 @@
 }
 :root{
     font-size: 16px;
+    --colorFondoMenu: rgba(24, 24, 24, 0.76);
+    --colorFondoMenuSolido: rgba(34, 34, 34);
     --colorFuenteGeneral: #FBFFF1;
     --colorAcento: rgb(255, 99, 71);
-    --colorFuente: rgb(79, 79, 231);
+    --colorFuente: rgb(27, 72, 197);
+    --colorFuente2: rgb(79, 79, 231);
     --fondoGlass: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(214, 214, 214, 0.2));
     --blurFondo: blur(10px);
-    --colorGradBoton: linear-gradient(45deg, yellowgreen, var(--colorFuente));
+    --colorGradBoton: linear-gradient(45deg, var(--colorAcento), var(--colorFuente));
 }
 body{
     color: var(--colorFuenteGeneral);
@@ -50,7 +53,7 @@ informacion de como hizo el chico el fondo de su portfolio:
 
 header{
     position: fixed;
-    background-color: rgba(24, 24, 24, 0.76);
+    background-color: var(--colorFondoMenu);
     -webkit-backdrop-filter: var(--blurFondo);
     backdrop-filter: var(--blurFondo);
     color: var(--colorFondo);
@@ -64,7 +67,7 @@ header{
 h1{
     opacity: .8;
     color: var(--colorAcento);
-    text-shadow: 1px 1px 2px var(--colorFuenteGeneral);
+    text-shadow: 1px 1px 2px black;
     padding: 5px 30px;
     display: flex;
     align-items: center;
@@ -89,6 +92,7 @@ li{
 }
 .contacto{
     color: blueviolet;
+    opacity: .8;
     height: 7%;
     width: 80%;
     border-radius: 1rem;
@@ -117,6 +121,7 @@ li{
 }
 .contenedorLink{
     background-image: url("../img/giphy4.gif");
+    opacity: .9;
     border-radius: 1rem;
     display: grid;
     place-items: center;
@@ -127,7 +132,6 @@ li{
     color: var(--colorAcento);
     border: 1px solid var(--colorAcento);
     background: var(--colorFondo);
-    box-shadow: 0 0 150pc 3px rgba(230, 199, 173, 0.3);
     cursor: pointer;
     transition: 0.2s;
 }
@@ -135,7 +139,7 @@ li{
     background-image: linear-gradient(var(--colorAcento), var(--colorAcento));
 }
 .contacto:hover .contenedorLink{
-    background-image: var(--colorFondo);
+    background-image: var(--colorFondoMenu);
 }
 
 .mostrar-menu,
@@ -468,7 +472,7 @@ footer a{
         position:fixed;
         width: 70%;
         height: 100vh;
-        background: rgb(34, 34, 34);
+        background: var(--colorFondoMenuSolido);
         right: -100%;
         top: 0;
         text-align: center;
@@ -483,13 +487,42 @@ footer a{
     .menu ul{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         width: 100%;
+    }
+    .menu li{
+        margin: 20px;
     }
     .menu a{
         display: block;
-        padding: 20px;
         font-size: 1.3rem;
         text-align: start;
+    }
+    .link{
+        color: var(--colorFuenteGeneral);
+        padding: 0;
+    }
+    .contenedorLink{
+        background: none;
+        place-items: start;
+    }
+    .contacto{
+        height: fit-content;
+        background: none;
+        opacity: 1;
+    }
+    .contacto:hover{
+        color: var(--colorAcento);
+        border: 0px solid transparent;
+        background: var(--colorFondo);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .contacto:hover .link{
+        background-image: none;
+    }
+    .contacto:hover .contenedorLink{
+        background-image: none;
     }
     .esconder-menu{
         position: absolute;
