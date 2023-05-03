@@ -409,7 +409,7 @@ section{
 }
 .cuatro button:hover{
     cursor: pointer;
-    background-color: var(--colorAcento);
+    background: var(--colorAcento);
     color: var(--colorFuenteGeneral);
     animation: pulso 10s 9999s;
 }
@@ -419,6 +419,9 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+}
+.cuatro button:hover > p{
+    animation: none;
 }
 /*=========FOOTER===========*/
 footer{
@@ -661,12 +664,15 @@ footer a{
     
 	5%{
         transform: scale(1);
-		box-shadow: 0px 0px 5px 3px rgba(173, 216, 230, 0.74);
+		box-shadow: 0px 0px 5px 3px rgba(173, 216, 230, 0.74)inset,
+                 0px 0px 5px 3px rgba(173, 216, 230, 0.74);
 	}
 	60%{
-		box-shadow: 0px 0px 5px 50px rgba(173, 216, 230, 0.0);
+		box-shadow: 0px 0px 5px 50px rgba(173, 216, 230, 0.0)inset,
+                 0px 0px 5px 50px rgba(173, 216, 230, 0.0);
 	}
     99.99%{
-		box-shadow: 0px 0px 5px 50px rgba(173, 216, 230, 0.0);
+		box-shadow: 0px 0px 5px 50px rgba(173, 216, 230, 0.0)inset,
+                 0px 0px 5px 50px rgba(173, 216, 230, 0.0);
 	}
 }
