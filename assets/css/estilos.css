@@ -220,10 +220,13 @@ section{
     margin: 3rem;
 }
 .yo{
-    width: 20rem;
+    width: 30rem;
     object-fit: cover;
     border-radius: 6rem;
-    border: 7px double var(--colorFuenteGeneral);
+    filter: grayscale(.1) brightness(.9) contrast(.9);
+    /* border: 7px double var(--colorFuenteGeneral); */
+    /* background: linear-gradient(to left, white, #e7e7e7); */
+    transform: scaleX(-1);
 }
 .texto{
     padding: 2rem;
@@ -602,7 +605,7 @@ footer a{
     .yo{
         width: 15rem;
         border-radius: 3rem;
-        border: 4px double var(--colorFuenteGeneral);
+        /* border: 4px double var(--colorFuenteGeneral); */
     }
     .texto{
         width: 100%;
