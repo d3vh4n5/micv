@@ -15,6 +15,30 @@
     src: url('../Fuentes/play/Play-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Goldman';
+    src: url('../Fuentes/goldman/Goldman-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Michroma';
+    src: url('../Fuentes/Michroma/Michroma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'DotGothic16';
+    src: url('../Fuentes/DotGothic16/DotGothic16-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'geostar_fill';
+    src: url('../Fuentes/geostar_fill/GeostarFill-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
 *{
     margin: 0;
@@ -85,7 +109,7 @@ h1{
     padding: 5px 30px;
     display: flex;
     align-items: center;
-    font-family: Play;
+    font-family: Goldman;
     background-image: url(../img/hacker.gif);
     background-position-y: 40%;
     background-clip: text;
@@ -243,9 +267,6 @@ section{
     object-fit: cover;
     border-radius: 67rem;
     /* filter: grayscale(.1) brightness(.9) contrast(.9); */
-    /* border-bottom: 7px double var(--colorFuenteGeneral);*/
-    border-top: 3px double rgba(0, 0, 0, 0.527);
-    /* background: linear-gradient(to left, white, #e7e7e7); */
     box-shadow: -5px 30px 15px 3px rgba(0, 0, 0, 0.37);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -266,11 +287,12 @@ section{
     margin: 2rem auto;
     font-size: 3rem;
     color: var(--colorFuenteGeneral);
+    font-family: play;
 }
 .texto h3{
     color: var(--colorAcento);
     text-align: center;
-    font-family: Play;
+    font-family: Goldman;
     font-weight: bold;
 }
 .texto p{
@@ -347,7 +369,7 @@ section{
     position: absolute;
     padding: 15px;
     bottom: -150px;
-    background: linear-gradient(to right bottom,rgba(0, 0, 0, 0.6) 50%,rgba(255, 99, 71, 0.6));
+    background: linear-gradient(to right bottom,rgba(0, 0, 0, 0.6) 50%,transparent);
     background-attachment: fixed;
     background-position: 50%;
     background-repeat: no-repeat;
