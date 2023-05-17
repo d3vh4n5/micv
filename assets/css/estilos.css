@@ -4,6 +4,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'Play';
+    src: url('../Fuentes/play/Play-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Play';
+    src: url('../Fuentes/play/Play-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -67,11 +79,18 @@ header{
 }
 h1{
     opacity: .8;
-    color: var(--colorAcento);
-    text-shadow: 1px 1px 2px black;
+    /* color: var(--colorAcento); */
+    color: rgba(153, 205, 50, 0.05);
+    text-shadow: 3px 3px 2px rgba(153, 205, 50, 0.05);
     padding: 5px 30px;
     display: flex;
     align-items: center;
+    font-family: Play;
+    background-image: url(../img/hacker.gif);
+    background-position-y: 40%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
 }
 nav{
     display: flex;
@@ -198,10 +217,10 @@ section{
     height: 100%;
 }
 .uno, .tres{
-    background-color: rgb(94, 19, 19);
+    background-color: rgb(19, 20, 94);
 }
 .uno{
-    background-image: url(../img/bg_dots_steam.png);
+    background: linear-gradient(to bottom right,rgba(5, 13, 61, 0.1),black),url(../img/bg_dots_steam.png);
     background-size: cover;
     background-position: 100%;
     min-height: 100%;
@@ -222,10 +241,13 @@ section{
 .yo{
     width: 30rem;
     object-fit: cover;
-    border-radius: 6rem;
-    filter: grayscale(.1) brightness(.9) contrast(.9);
-    /* border: 7px double var(--colorFuenteGeneral); */
+    border-radius: 67rem;
+    /* filter: grayscale(.1) brightness(.9) contrast(.9); */
+    /* border-bottom: 7px double var(--colorFuenteGeneral);*/
+    border-top: 3px double rgba(0, 0, 0, 0.527);
     /* background: linear-gradient(to left, white, #e7e7e7); */
+    box-shadow: 0px 30px 15px 3px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(3px);
     transform: scaleX(-1);
 }
 .texto{
@@ -247,11 +269,13 @@ section{
 .texto h3{
     color: var(--colorAcento);
     text-align: center;
+    font-family: Play;
+    font-weight: bold;
 }
 .texto p{
     color: var(--colorFuenteGeneral);
     font-size: 1.05rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto;
     text-align: center;
 }
 /*=================
@@ -604,7 +628,7 @@ footer a{
     }
     .yo{
         width: 15rem;
-        border-radius: 3rem;
+        border-radius: 37rem;
         /* border: 4px double var(--colorFuenteGeneral); */
     }
     .texto{
