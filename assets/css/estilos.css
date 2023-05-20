@@ -68,7 +68,15 @@ body{
     overflow: hidden;
     font-family: Roboto;
 }
-
+.logo{
+    position: fixed;
+    width: 8rem;
+    height: 1.8rem;
+    z-index: 200;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: .1;
+}
 a{
     color: var(--colorFuenteGeneral);
     font-weight: 600;
@@ -298,7 +306,7 @@ section{
 .texto p{
     color: var(--colorFuenteGeneral);
     font-size: 1.05rem;
-    font-family: Roboto;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 /*=================
@@ -346,7 +354,7 @@ section{
 .tarjeta{
     all: unset;
     position: relative;
-    filter: opacity(.4);
+    filter: opacity(.4) blur(1.5px);
     margin: 10px;
     width: var(--anchoTarjeta);
     height: calc(var(--anchoTarjeta)/1.8);
@@ -384,28 +392,28 @@ section{
     color: var(--colorAcento);
 }
 .status{
-    background-color: rgb(10, 10, 10);
-    color: lightgrey;
-    text-shadow: 1px 1px 1px lightgrey;
+    background-color: rgba(10, 10, 10, 0.6);
+    padding: .5rem;
+    color: green;
+    text-shadow: 1px 1px 1px rgba(0, 128, 0, 0.5);
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
-.react p{
-    background: none;
-    color: green;
-    text-shadow: 1px 1px 1px green;
-}
 .content{
     color: lightgray;
-    text-shadow: 1px 1px 1px lightgray;
+    text-shadow: 1px 1px 1px rgba(211, 211, 211, 0.5);
 }
-.finalizado{
-    color: green;
-    text-shadow: 1px 1px 1px green;
+.green{
+    color: yellowgreen;
+    text-shadow: 1px 1px 1px rgba(153, 205, 50, 0.5);
 }
-.trabajando{
+.orange{
     color: orange;
-    text-shadow: 1px 1px 1px orange;
+    text-shadow: 1px 1px 1px rgba(255, 166, 0, 0.5);
+}
+.red{
+    color: red;
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.5);
 }
 .tarjeta:hover{
     filter: opacity(1);

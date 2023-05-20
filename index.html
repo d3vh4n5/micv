@@ -14,6 +14,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/icons/Hanslogo2.ico">
 </head>
 <body>
+    <img src="./assets/img/dEVhans.png" alt="dEVhans logo" class="logo">
     <div  id="darkScreen"></div>
     <header>
         <h1>d3vh4n5</h1>
@@ -23,11 +24,11 @@
         </label>
         <nav class="menu">
             <ul>
-                <li><a class="optionMenu" href="#inicio">Inicio</a></li>
-                <li><a class="optionMenu" href="#carrera">Conocimientos</a></li>
-                <li><a class="optionMenu" href="#proyectos">Proyectos</a></li>
+                <li><a class="optionMenu" href="#inicio">Home</a></li>
+                <li><a class="optionMenu" href="#carrera">Skills</a></li>
+                <li><a class="optionMenu" href="#proyectos">Projects</a></li>
                 <li><a class="optionMenu" href="./assets/files/CV_Juan_Basgall_Programador.pdf" target="_blank">CV</a></li>
-                <li class="contacto"><span class="contenedorLink"><a href="#contacto" class="optionMenu link">contacto</a></span></li>
+                <li class="contacto"><span class="contenedorLink"><a href="#contacto" class="optionMenu link">contact</a></span></li>
             </ul>
             <label for="check"  class="esconder-menu">
                 &#215
@@ -38,16 +39,17 @@
         <section class="uno" id="inicio">
             <img src="./assets/img/perfil-transparente.png" alt="foto de Juan" class="yo">
             <div class="texto">
-                <p>Bienvenid@</p>
-                <h2 class="titulos">Soy Juan Basgall</h2>
-                <h3><i>Desarrollador de software || Diseñador UX-UI</i></h3>
+                <p>Welcome!</p>
+                <h2 class="titulos">I'm Juan Basgall</h2>
+                <h3><i>Full-Stack Developer || UX-UI Designer</i></h3>
                 <br>
-                <p>Estudiante de la "Tecnicatura superior en programación" en <a href="https://www.teclab.edu.ar/">Teclab</a>, y recibido del curso de UX - UI de <a href="https://buenosaires.gob.ar/educacion/codo-codo-40">Codo a Codo</a>.</p>
+                <!-- <p>Python - django || PHP || MySQL || JavaScript - React</p> -->
+                <!-- <p>Estudiante de la "Tecnicatura superior en programación" en <a href="https://www.teclab.edu.ar/">Teclab</a>, y recibido del curso de UX - UI de <a href="https://buenosaires.gob.ar/educacion/codo-codo-40">Codo a Codo</a>.</p> -->
             </div>
         </section>
         <section class="dos" id="carrera">
             <div class="contenedorConocimientos">
-                <h2 class="titulos">Conocimientos</h2>
+                <h2 class="titulos">Skills</h2>
                 <ul>
                     <li><i class="fa-brands fa-html5"></i> HTML</li>
                     <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
@@ -55,10 +57,10 @@
                     <li><i class="fa-brands fa-square-js"></i> JavaScript</li>
                     <li><i class="fa-brands fa-php"></i> PHP</li>
                     <li><i class="fa-brands fa-python"></i> Python</li>
-                    <li><i class="fa-regular fa-gem"></i> Ruby</li>
+                    <li><i class="fa-brands fa-python"></i> Django</li>
+                    <!-- <li><i class="fa-regular fa-gem"></i> Ruby</li> -->
                     <li><i class="fa-brands fa-figma"></i> Figma</li>
                     <li><i class="fa-solid fa-database"></i> SQL</li>
-                    <li><i class="fa-brands fa-python"></i> Django</li>
                     <li><i class="fa-brands fa-git-alt"></i> Git</li>
                     <li><i class="fa-brands fa-github"></i> GitHub</li>
                     <li><i class="fa-brands fa-docker"></i> Docker</li>
@@ -69,43 +71,53 @@
             </div>
         </section>
         <section class="tres" id="proyectos">
-            <h2 class="titulos">Proyectos</h2>
+            <h2 class="titulos">Projects</h2>
             <div class="contenedorTarjetas">
                 <a class="tarjeta" href="https://mercadolan.000webhostapp.com/backend/acerca_de.php" target="_blank">
                     <img class="imgTarjeta" src="./assets/img/mercadolan.png" alt="">
                     <div class="descripcionTarjeta">
                         <h4>"Mercado Lan"</h4>
-                        <p>e-commerce de prueba desarrollado en PHP.</p>
-                        <p>Host: Temporal ⚠️</p>
-                        <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
+                        <p>e-commerce test developed in PHP.</p>
+                        <br>
+                        <p class="status">
+                            host: <span class="orange">temporary ⚠️</span>
+                            <br>
+                            status: <span class="green">Finished</span>
+                        </p>
                     </div>
                 </a>
                 <a class="tarjeta" href="https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link" target="_blank">
                     <img class="imgTarjeta" src="./assets/img/arbeit.png" alt="">
                     <div class="descripcionTarjeta">
                         <h4>"Arbeit"</h4>
-                        <p>Diseño UX-UI de una aplicación móvil dedicada a la búsqueda y oferta de empleo.</p>
-                        <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
+                        <p>UX-UI Design of a mobile app.</p>
+                        <br>
+                        <p class="status">status: <span class="green">Finished</span></p>
                     </div>
                 </a>
                 <a class="tarjeta" href="https://d3vh4n5.pythonanywhere.com/core/" target="_blank">
                     <img class="imgTarjeta" src="./assets/img/crudalumnos.png" alt="">
                     <div class="descripcionTarjeta">
                         <h4>Django</h4>
-                        <p>Mini proyecto de pruebas para aprender Django.</p>
-                        <p>Host: Temporal ⚠️ vence: 01-07-23</p>
-                        <p class="status">Estado: <span class="trabajando">Trabajando (Aprendiendo)</span></p>
+                        <p>Mini django project for learning.</p>
+                        <br>
+                        <p class="status">
+                            host: <span class="orange">temporary ⚠️</span> <span class="red">expires: 01-07-23</span>
+                            <br>
+                            status: <span class="green">Finished</span>
+                        </p>
                     </div>
                 </a>
                 <a class="tarjeta" href="./assets/files/crud.zip" download>
                     <img class="imgTarjeta" src="./assets/img/crudcacpython.png" alt="">
                     <div class="descripcionTarjeta">
                         <h4>CRUD</h4>
-                        <p>Este es un CRUD de escritorio desarrollado en python durante el curso de Big-Data de codo a codo. Solo funciona en Windows.</p>
-                        <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
+                        <p>CRUD desktop app developed in Python. It only works in Windows.</p>
+                        <br>
+                        <p class="status">status: <span class="green">Finished</span></p>
                     </div>
                 </a>
-                <a class="tarjeta" href="http://bit.ly/linkscv" target="newwindow" onclick="window.open('http://bit.ly/linkscv', 'newwindow', 'width=800, height=600'); return false;">
+                <!-- <a class="tarjeta" href="http://bit.ly/linkscv" target="newwindow" onclick="window.open('http://bit.ly/linkscv', 'newwindow', 'width=800, height=600'); return false;">
                     <img class="imgTarjeta" src="./assets/img/scv.png" alt="">
                     <div class="descripcionTarjeta">
                         <h4>Redireccionador CV</h4>
@@ -113,28 +125,29 @@
                         <p>Host: Temporal ⚠️</p>
                         <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
                     </div>
-                </a>
-                <a class="tarjeta react" href="https://d3vh4n5-reactlearn.netlify.app/" target="_blank">
+                </a> -->
+                <a class="tarjeta react" href="https://d3vh4n5-reactlearn.netlify.app/inicio" target="_blank">
                     <img class="imgTarjeta" src="./assets/img/reactweb.png" alt="">
                     <div class="descripcionTarjeta">
-                        <p class="status">Name: <span class="content">React App</span> Type: <span class="content">Web Site</span></p>
-                        <p class="status">Description: <span class="content">Sitio web de prácticas con React.</span></p>
-                        <p class="status">Status: <span class="trabajando">Trabajando (Aprendiendo)</span></p>
-                        <p class="status">Host: <span class="trabajando">Temporal ⚠ vence: 26-07-23</span></p>
+                        <p class="status">name: <span class="content">React App</span> type: <span class="content">Web Site</span>
+                            <br>description: <span class="content">React learn website</span>
+                            <br>status: <span class="orange">Working (learning)</span>
+                            <br>host: <span class="orange">Temporary ⚠</span> <span class="red">expires: 26-07-23</span>
+                        </p>
                     </div>
                 </a>
             </div>
         </section>
         <section class="cuatro" id="contacto">
             <form action="">
-                <h2 class="titulos">CONTACTO</h2>
+                <h2 class="titulos">Contact</h2>
                 <label for="">Mail</label>
                 <input type="email" id="email" required>
-                <label for="name">Nombre:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
-                <label for="message">Mensaje:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" cols="30" rows="10" required></textarea>
-                <button type="submit" class="btn" onclick="sendEmail()" alt="Enviar mail"><p class="pulso">Enviar</p></button>
+                <button type="submit" class="btn" onclick="sendEmail()" alt="Enviar mail"><p class="pulso">Submit</p></button>
             </form>
         </section>
         <footer>
