@@ -50,6 +50,7 @@
     font-size: 16px;
     --colorFondoMenu: rgba(24, 24, 24, 0.76);
     --colorFondoMenuSolido: rgba(34, 34, 34);
+    --colorFondoAzulOscuro: rgb(1,4,9);
     --colorFuenteGeneral: #FBFFF1;
     --colorAcento: rgb(255, 99, 71);
     --colorFuente: rgb(27, 72, 197);
@@ -249,7 +250,12 @@ section{
     height: 100%;
 }
 .uno, .tres{
-    background-color: rgb(19, 20, 94);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
+        circle at 33% 10%,
+        rgb(1, 25, 43) 5%,
+        rgb(2, 5, 41) 20%,
+        rgb(2, 4, 32) 40%,
+         var(--colorFondoAzulOscuro)80%);
 }
 .uno{
     background: linear-gradient(to bottom right,rgba(5, 13, 61, 0.1),black),url(../img/bg_dots_steam.png);
@@ -261,8 +267,38 @@ section{
     height: fit-content;
     padding: 50px;
 }
+/*  =============
+    Parallax  
+    =============
+*/
+main{
+    perspective: 10px;
+    overflow-x: hidden;
+}
+.dos{
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.earth{
+    position: absolute;
+    transform: translateZ(-25px);
+    overflow: hidden;
+    width: 200rem;
+    right: -180%;
+}
+.moon{
+    position: absolute;
+    transform: translateZ(-3px) scale(.8);
+    left: 5%;
+    overflow: hidden;
+}
+
+/*  =============
+    Parallax  
+    =============
+*/
 .tres{
-    background-image: url(../img/bg_dots_steam.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -620,6 +656,11 @@ footer a{
     }
     .contenedorConocimientos{
         width: 100%;
+    }
+    /* parallax */
+    .moon{
+        transform: translateZ(-9px) scale(.8);
+        left: 85%;
     }
     .contacto{
         height: fit-content;
