@@ -113,7 +113,7 @@ header{
 h1{
     opacity: .8;
     /* color: var(--colorAcento); */
-    color: transparent;
+    color: rgba(153, 205, 50, 0.3);
     /* text-shadow: 3px 3px 2px var(--colorAcento); */
     padding: 5px 30px;
     display: flex;
