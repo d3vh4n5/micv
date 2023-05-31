@@ -282,8 +282,8 @@ main{
 }
 .moon{
     position: absolute;
-    transform: translateZ(-3px) scale(.8);
-    left: 5%;
+    transform: translateZ(-10px) scale(.8);
+    left: -15%;
     overflow: hidden;
 }
 
@@ -308,6 +308,7 @@ main{
     object-fit: cover;
     border-radius: 67rem;
     /* filter: grayscale(.1) brightness(.9) contrast(.9); */
+    filter: drop-shadow(-30px 30px 20px rgba(0, 0, 0, 0.9));
     box-shadow: -5px 30px 15px 3px rgba(0, 0, 0, 0.37);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -341,6 +342,23 @@ main{
     font-size: 1.05rem;
     font-family: Goldman;
     text-align: center;
+}
+.btnCV{
+    text-decoration: none;
+    color: var(--colorAcento);
+    font-family: play;
+    padding: 10px 30px;
+    margin: 40px 0;
+    border: 1px solid var(--colorAcento);
+    border-radius: 50px;
+}
+.btnCV:hover{
+    animation: none;
+    color: var(--colorFuenteGeneral);
+    background-color: var(--colorAcento);
+    text-shadow: 0px 0px 3px green;
+    box-shadow: 0 0 20px 10px rgba(153, 205, 50, 0.6),
+    0 0 20px 10px rgba(153, 205, 50, 0.6) inset;
 }
 /*=================
     CONOCIMIENTOS
