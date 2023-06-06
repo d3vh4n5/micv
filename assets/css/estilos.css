@@ -424,10 +424,13 @@ main{
     filter: grayscale(1);
     transition: all .5s;
 }
+summary:hover{
+    cursor: pointer;
+}
 .descripcionTarjeta{
     position: absolute;
     padding: 15px;
-    bottom: -190px;
+    bottom: -290px;
     background: linear-gradient(to right bottom,rgba(0, 0, 0, 0.6) 50%,transparent);
     background-attachment: fixed;
     background-position: 50%;

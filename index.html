@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +41,7 @@
                 <p>Welcome!</p>
                 <h2 class="titulos">I'm Juan Basgall</h2>
                 <h3><i>Full-Stack Developer || UX-UI Designer</i></h3>
-                <a class="btnCV pulso" href="./assets/files/CV_Juan_Basgall_Programador.pdf" target="_blank">Descargar CV</a>
+                <a class="btnCV pulso" href="./assets/files/CV_Juan_Basgall_Programador.pdf" target="_blank">Download CV</a>
                 <br>
                 <!-- <p>Python - django || PHP || MySQL || JavaScript - React</p> -->
                 <!-- <p>Estudiante de la "Tecnicatura superior en programación" en <a href="https://www.teclab.edu.ar/">Teclab</a>, y recibido del curso de UX - UI de <a href="https://buenosaires.gob.ar/educacion/codo-codo-40">Codo a Codo</a>.</p> -->
@@ -69,7 +69,7 @@
                     <li><i class="fa-brands fa-github"></i> GitHub</li>
                     <li><i class="fa-brands fa-docker"></i> Docker</li>
                     <li><i class="fa-solid fa-desktop"></i> Tkinter</li>
-                    <li><i class="fa-duotone fa-network-wired"></i> APIs</li>
+                    <!-- <li><i class="fa-duotone fa-network-wired"></i> APIs</li> -->
                     <li><i class="fa-brands fa-react"></i> React JS</li>
                 </ul>
             </div>
@@ -77,64 +77,86 @@
         <section class="tres" id="proyectos">
             <h2 class="titulos">Projects</h2>
             <div class="contenedorTarjetas">
-                <a class="tarjeta" href="https://mercadolan.000webhostapp.com/backend/acerca_de.php" target="_blank">
+                <div class="tarjeta">
                     <img class="imgTarjeta" src="./assets/img/mercadolan.png" alt="">
                     <div class="descripcionTarjeta">
-                        <h4>"Mercado Lan"</h4>
-                        <p>e-commerce test developed in PHP.</p>
-                        <br>
-                        <p class="status">
-                            host: <span class="orange">temporary ⚠️</span>
+                        <details>
+                            <summary>Click for Details</summary>
+                            <h4>"Mercado Lan"</h4>
+                            <p>e-commerce test developed in PHP.</p>
+                            <a href="https://mercadolan.000webhostapp.com/backend/acerca_de.php" target="_blank">Visit Page</a>
                             <br>
-                            status: <span class="green">Finished</span>
-                        </p>
+                            <p class="status">
+                                host: <span class="orange">temporary ⚠️</span>
+                                <br>
+                                status: <span class="green">Finished</span>
+                            </p>
+                        </details>
                     </div>
-                </a>
-                <a class="tarjeta" href="https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link" target="_blank">
+                </div>
+                <div class="tarjeta">
                     <img class="imgTarjeta" src="./assets/img/arbeit.png" alt="">
                     <div class="descripcionTarjeta">
-                        <h4>"Arbeit"</h4>
-                        <p>UX-UI Design of a mobile app.</p>
-                        <br>
-                        <p class="status">status: <span class="green">Finished</span></p>
+                        <details>
+                            <summary>Click for Details</summary>
+                            <h4>"Arbeit"</h4>
+                            <p>UX-UI Design of a mobile app.</p>
+                            <a href="https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link" target="_blank">UX Report</a>
+                            <br>
+                            <p class="status">status: <span class="green">Finished</span></p>
+                        </details>
                     </div>
-                </a>
-                <a class="tarjeta" href="https://d3vh4n5.pythonanywhere.com/core/" target="_blank">
+                </div>
+                <div class="tarjeta">
                     <img class="imgTarjeta" src="./assets/img/crudalumnos.png" alt="">
                     <div class="descripcionTarjeta">
-                        <h4>Django</h4>
-                        <p>Mini django project for learning.</p>
-                        <br>
-                        <p class="status">
-                            host: <span class="orange">temporary ⚠️</span> <span class="red">expires: 01-07-23</span>
+                        <details>
+                            <summary>Click for Details</summary>
+                            <h4>Django</h4>
+                            <p>Mini django project for learning.</p>
+                            <a href="https://d3vh4n5.pythonanywhere.com/core/" target="_blank">Visit Page</a>
                             <br>
-                            status: <span class="green">Finished</span>
-                        </p>
+                            <p class="status">
+                                host: <span class="orange">temporary ⚠️</span> <span class="red">expires: 01-07-23</span>
+                                <br>
+                                status: <span class="green">Finished</span>
+                            </p>
+                        </details>
                     </div>
-                </a>
-                <a class="tarjeta" href="https://app-juanangelbasgall.b4a.run/" target="_blank">
+                </div>
+                <div class="tarjeta" href="https://app-juanangelbasgall.b4a.run/" target="_blank">
                     <img class="imgTarjeta" src="./assets/img/node.png" alt="Node Logo">
                     <div class="descripcionTarjeta">
-                        <h4>API</h4>
-                        <p>This is an API developed with my Team as an extracurricular project of 
-                            the subject "Web Integrations" of our career as 'programming technique' Teclab.</p>
-                        <br>
-                        <p class="status">
-                            host: <span class="orange">temporary ⚠️</span>
+                        <details>
+                            <summary>Click for Details</summary>
+                            <h4>API</h4>
+                            <p>
+                                This is an API developed with my Team as an extracurricular project of 
+                                the subject "Web Integrations" of our career as 'programming technique' Teclab.
+                            </p>
+                            <a href="https://app-juanangelbasgall.b4a.run/" target="_blank">Visit Page</a>
                             <br>
-                            status: <span class="orange">Developing</span>
-                        </p>
+                            <p class="status">
+                                host: <span class="orange">temporary ⚠️</span>
+                                <br>
+                                status: <span class="orange">Developing</span>
+                            </p>
+                        </details>
                     </div>
-                </a>
-                <a class="tarjeta" href="./assets/files/crud.zip" download>
+                </div>
+                <div class="tarjeta">
                     <img class="imgTarjeta" src="./assets/img/crudcacpython.png" alt="">
                     <div class="descripcionTarjeta">
-                        <h4>CRUD</h4>
-                        <p>CRUD desktop app developed in Python. It only works in Windows.</p>
-                        <br>
-                        <p class="status">status: <span class="green">Finished</span></p>
+                        <details>
+                            <summary>Click for Details</summary>
+                            <h4>CRUD</h4>
+                            <p>CRUD desktop app developed in Python. It only works in Windows.</p>
+                            <a href="./assets/files/crud.zip" download>Download</a>
+                            <br>
+                            <p class="status">status: <span class="green">Finished</span></p>
+                        </details>
                     </div>
-                </a>
+                </div>
                 <!-- <a class="tarjeta" href="http://bit.ly/linkscv" target="newwindow" onclick="window.open('http://bit.ly/linkscv', 'newwindow', 'width=800, height=600'); return false;">
                     <img class="imgTarjeta" src="./assets/img/scv.png" alt="">
                     <div class="descripcionTarjeta">
@@ -144,16 +166,20 @@
                         <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
                     </div>
                 </a> -->
-                <a class="tarjeta react" href="https://d3vh4n5-reactlearn.netlify.app/inicio" target="_blank">
+                <div class="tarjeta react">
                     <img class="imgTarjeta" src="./assets/img/reactweb.png" alt="">
                     <div class="descripcionTarjeta">
-                        <p class="status">name: <span class="content">React App</span> type: <span class="content">Web Site</span>
-                            <br>description: <span class="content">React learn website</span>
-                            <br>status: <span class="orange">Working (learning)</span>
-                            <br>host: <span class="orange">Temporary ⚠</span> <span class="red">expires: 26-07-23</span>
-                        </p>
+                        <details>
+                            <summary>Click for Details</summary>
+                            <a href="https://d3vh4n5-reactlearn.netlify.app/inicio" target="_blank">Visit Page</a>
+                            <p class="status">name: <span class="content">React App</span> type: <span class="content">Web Site</span>
+                                <br>description: <span class="content">React learn website</span>
+                                <br>status: <span class="orange">Working (learning)</span>
+                                <br>host: <span class="orange">Temporary ⚠</span> <span class="red">expires: 26-07-23</span>
+                            </p>
+                        </details>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
         <section class="cuatro parallax" id="contacto">
