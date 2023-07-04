@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Portfolio DevHans">
+    <meta property="og:description" content="Portfolio personal de Juan Basgall (d3vh4n5)">
+    <meta property="og:image" content="https://d3vh4n5.com.ar/assets/img/dEVhans.png">
+    <meta property="og:site_name" content="Portfolio d3vh4n5">
     <title>Portfolio Juan Basgall</title>
     <!--
         https://cdnjs.com/libraries/font-awesome
@@ -14,7 +18,6 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/icons/Hanslogo2.ico">
 </head>
 <body>
-    <img src="./assets/img/dEVhans.png" alt="dEVhans logo" class="logo">
     <div  id="darkScreen"></div>
     <header>
         <h1>d3vh4n5</h1>
@@ -47,7 +50,7 @@
                 <!-- <p>Estudiante de la "Tecnicatura superior en programación" en <a href="https://www.teclab.edu.ar/">Teclab</a>, y recibido del curso de UX - UI de <a href="https://buenosaires.gob.ar/educacion/codo-codo-40">Codo a Codo</a>.</p> -->
             </div>
         </section>
-        <section class="dos parallax" id="carrera">
+        <section class="skills parallax" id="carrera">
             <img src="./assets/img/earth.png" class="earth">
             <img src="./assets/img/moon.png" class="moon">
             <div class="contenedorConocimientos">
@@ -74,9 +77,10 @@
                 </ul>
             </div>
         </section>
-        <section class="tres" id="proyectos">
+        <section class="projects" id="proyectos">
             <h2 class="titulos">Projects</h2>
-            <div class="contenedorTarjetas">
+            <div class="contenedorTarjetas php">
+                <img class="tecLogo" src="./assets/img/PHP-logo.svg.png" alt="php logo">
                 <div class="tarjeta">
                     <img class="imgTarjeta" src="./assets/img/mercadolan.png" alt="">
                     <div class="descripcionTarjeta">
@@ -94,19 +98,18 @@
                         </details>
                     </div>
                 </div>
-                <div class="tarjeta">
-                    <img class="imgTarjeta" src="./assets/img/arbeit.png" alt="">
+                <!-- <a class="tarjeta" href="http://bit.ly/linkscv" target="newwindow" onclick="window.open('http://bit.ly/linkscv', 'newwindow', 'width=800, height=600'); return false;">
+                    <img class="imgTarjeta" src="./assets/img/scv.png" alt="">
                     <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <h4>"Arbeit"</h4>
-                            <p>UX-UI Design of a mobile app.</p>
-                            <a href="https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link" target="_blank">UX Report</a>
-                            <br>
-                            <p class="status">status: <span class="green">Finished</span></p>
-                        </details>
+                        <h4>Redireccionador CV</h4>
+                        <p>Mini Web App de registros y redirección con estilo retro. Hace uso del método GET para obtener información y registrarla en la DB.</p>
+                        <p>Host: Temporal ⚠️</p>
+                        <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
                     </div>
-                </div>
+                </a> -->
+            </div>
+            <div class="contenedorTarjetas python">
+                <img class="tecLogo right" src="./assets/img/Python_logo_01.svg.png" alt="Python logo">
                 <div class="tarjeta">
                     <img class="imgTarjeta" src="./assets/img/crudalumnos.png" alt="">
                     <div class="descripcionTarjeta">
@@ -124,6 +127,22 @@
                         </details>
                     </div>
                 </div>
+                <div class="tarjeta">
+                    <img class="imgTarjeta" src="./assets/img/crudcacpython.png" alt="">
+                    <div class="descripcionTarjeta">
+                        <details>
+                            <summary>Click for Details</summary>
+                            <h4>CRUD</h4>
+                            <p>CRUD desktop app developed in Python. It only works in Windows.</p>
+                            <a href="./assets/files/crud.zip" download>Download</a>
+                            <br>
+                            <p class="status">status: <span class="green">Finished</span></p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorTarjetas node">
+                <img class="tecLogo" src="./assets/img/JavaScript-Symbol.png" alt="JavaScript logo">
                 <div class="tarjeta" href="https://app-juanangelbasgall.b4a.run/" target="_blank">
                     <img class="imgTarjeta" src="./assets/img/node.png" alt="Node Logo">
                     <div class="descripcionTarjeta">
@@ -144,28 +163,6 @@
                         </details>
                     </div>
                 </div>
-                <div class="tarjeta">
-                    <img class="imgTarjeta" src="./assets/img/crudcacpython.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <h4>CRUD</h4>
-                            <p>CRUD desktop app developed in Python. It only works in Windows.</p>
-                            <a href="./assets/files/crud.zip" download>Download</a>
-                            <br>
-                            <p class="status">status: <span class="green">Finished</span></p>
-                        </details>
-                    </div>
-                </div>
-                <!-- <a class="tarjeta" href="http://bit.ly/linkscv" target="newwindow" onclick="window.open('http://bit.ly/linkscv', 'newwindow', 'width=800, height=600'); return false;">
-                    <img class="imgTarjeta" src="./assets/img/scv.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <h4>Redireccionador CV</h4>
-                        <p>Mini Web App de registros y redirección con estilo retro. Hace uso del método GET para obtener información y registrarla en la DB.</p>
-                        <p>Host: Temporal ⚠️</p>
-                        <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
-                    </div>
-                </a> -->
                 <div class="tarjeta react">
                     <img class="imgTarjeta" src="./assets/img/reactweb.png" alt="">
                     <div class="descripcionTarjeta">
@@ -181,8 +178,24 @@
                     </div>
                 </div>
             </div>
+            <div class="contenedorTarjetas ux-ui">
+                <img class="tecLogo right" src="./assets/img/ux-ui-logo.svg" alt="UX UI logo">
+                <div class="tarjeta">
+                    <img class="imgTarjeta" src="./assets/img/arbeit.png" alt="">
+                    <div class="descripcionTarjeta">
+                        <details>
+                            <summary>Click for Details</summary>
+                            <h4>"Arbeit"</h4>
+                            <p>UX-UI Design of a mobile app.</p>
+                            <a href="https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link" target="_blank">UX Report</a>
+                            <br>
+                            <p class="status">status: <span class="green">Finished</span></p>
+                        </details>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="cuatro parallax" id="contacto">
+        <section class="contact parallax" id="contacto">
             <form action="">
                 <h2 class="titulos">Contact</h2>
                 <label for="">Mail</label>
