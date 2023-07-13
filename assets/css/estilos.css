@@ -355,18 +355,21 @@ main{
     text-align: center;
     overflow: hidden;
 }
+.contenedorConocimientos p{
+    margin-bottom: 2rem;
+}
 .skills ul{
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .skills li{
-    margin: 2rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
-    animation: cambiarColor 4s ease alternate-reverse infinite;
+    animation: cambiarColor 3s ease alternate-reverse infinite;
 }
 .skills i{
     margin: 2rem;
