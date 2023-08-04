@@ -3,6 +3,9 @@
 const optionMenu = document.getElementsByClassName('optionMenu');
 const checkButton = document.getElementById('check');
 const darkScreen = document.getElementById('darkScreen')
+import { navButtonsLogic } from "./navBtnLogic.js";
+
+navButtonsLogic()
 
 for (let option of optionMenu){
   option.addEventListener('click', ()=>{

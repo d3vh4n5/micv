@@ -133,6 +133,12 @@ li{
     all: unset;
     text-transform: uppercase;
 }
+/* Clase para la lógica de la sección seleccionada */
+.active{
+    font-weight: bolder;
+    color: var(--colorAcento);
+    text-decoration: underline;
+}
 .contacto{
     color: blueviolet;
     opacity: .8;
