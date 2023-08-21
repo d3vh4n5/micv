@@ -360,9 +360,29 @@ main{
     padding: 3rem;
     text-align: center;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 .contenedorConocimientos p{
     margin-bottom: 2rem;
+}
+.contenedorBio{
+    display: flex;
+    gap: 20px;
+}
+.contenedorBio img{
+    width: 5rem;
+    flex: 2;
+}
+.contenedorBioTextos{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 9;
+    font-size: 1.2rem;
 }
 .skills ul{
     margin: 0 auto;
@@ -372,14 +392,14 @@ main{
     flex-wrap: wrap;
 }
 .skills li{
-    margin: 1rem;
+    /* margin: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     animation: cambiarColor 3s ease alternate-reverse infinite;
 }
-.skills i{
+/* .skills i{
     margin: 2rem;
-}
+} */
 
 /*=================
     PROYECTOS
@@ -407,7 +427,7 @@ main{
 .tecLogo{
     user-select: none;
     position: absolute;
-    width: 600px;
+    width: 60px;
     left: -5%;
     opacity: .03;
 }

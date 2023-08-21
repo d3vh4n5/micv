@@ -19,6 +19,7 @@
     <script type="module" defer src="./assets/js/main.js"></script>
 </head>
 <body>
+    <noscript>Necesita activar JavaScript para poder visualizar correctamente este sitio.</noscript>
     <div  id="darkScreen"></div>
     <header>
         <h1>d3vh4n5</h1>
@@ -29,9 +30,11 @@
         <nav class="menu">
             <ul>
                 <li><a class="optionMenu" href="#inicio" title="Home">Home</a></li>
-                <li><a class="optionMenu" href="#carrera" title="See my skills">Skills</a></li>
+                <li><a class="optionMenu" href="#skills" title="See my skills">Skills</a></li>
                 <li><a class="optionMenu" href="#proyectos" title="Visit my projects">Projects</a></li>
-                <li class="contacto"><span class="contenedorLink" title="Contact me"><a href="#contacto" class="optionMenu link">contact</a></span></li>
+                <!-- <li><a class="optionMenu" href="#exs" title="Exercises and Experiments">EXS</a></li>
+                <li><a class="optionMenu" href="#exs" title="Exercises and Experiments">blog</a></li> -->
+                <li class="contacto"><span class="contenedorLink" title="Contact me"><a href="#contacto" class="optionMenu link">contact me</a></span></li>
             </ul>
             <label for="check"  class="esconder-menu">
                 &#215
@@ -48,11 +51,29 @@
                 <a class="btnCV pulso" title="Click to download" href="./assets/files/CV_Juan_Basgall_Programador.pdf" target="_blank">Download CV</a>
             </div>
         </section>
-        <section class="skills parallax" id="carrera">
+        <section class="skills parallax" id="skills">
             <img src="./assets/img/earth.png" class="earth">
             <img src="./assets/img/moon.png" class="moon">
             <div class="contenedorConocimientos">
                 <h2 class="titulos">Skills</h2>
+                <div class="contenedorBio">
+                    <!-- <img src="./assets/img/perfil-transparente.png" alt="Foto de perfil de Juan"> -->
+                    <div class="contenedorBioTextos">
+                        <p>
+                            I am a student of the higher technical degree in programming at <a href="https://www.teclab.edu.ar/">Teclab</a>;
+                            Handling HTML, CSS, JavaScript and React for the Frontend, and PHP, Django and Node for the backend.
+                        </p>
+                        <p>
+                            I also know other technologies such as Tkinter (python desktop GUI), Git, GitHub, SQL, Figma, and Bootstrap.
+                        </p>
+                        <p>
+                            One of the things I like, is to understand how the things work, which leads me to investigate and deepen more and more.
+                        </p>
+                        <p>
+                            I am currently working at <a href="https://www.wamnet.com.ar/">WamNet</a> where I'm doing my professional practice.
+                        </p>
+                    </div>
+                </div>
                 <ul>
                     <li><i class="fa-brands fa-html5"></i> HTML</li>
                     <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
@@ -63,152 +84,42 @@
                     <li><i class="fa-brands fa-php"></i> PHP</li>
                     <li><i class="fa-brands fa-python"></i> Python</li>
                     <li><i class="fa-brands fa-python"></i> Django</li>
-                    <!-- <li><i class="fa-regular fa-gem"></i> Ruby</li> -->
                     <li><i class="fa-brands fa-figma"></i> Figma</li>
                     <li><i class="fa-solid fa-database"></i> SQL</li>
                     <li><i class="fa-brands fa-git-alt"></i> Git</li>
                     <li><i class="fa-brands fa-github"></i> GitHub</li>
                     <li><i class="fa-brands fa-docker"></i> Docker</li>
                     <li><i class="fa-solid fa-desktop"></i> Tkinter</li>
-                    <!-- <li><i class="fa-duotone fa-network-wired"></i> APIs</li> -->
                     <li><i class="fa-brands fa-react"></i> React JS</li>
                 </ul>
             </div>
         </section>
         <section class="projects" id="proyectos">
             <h2 class="titulos">Projects</h2>
+
+            <!-- <h2 style="color:red">Could not be loaded message to be replaced with the loader function</h2> -->
+            <div class="contenedorTarjetas" id="projectsContainer">
+                <!-- Dynamic filling content  -->
+            </div>
+
             <div class="contenedorTarjetas php">
                 <img class="tecLogo" src="./assets/img/PHP-logo.svg.png" alt="php logo">
-                <div class="tarjeta">
-                    <img class="imgTarjeta" src="./assets/img/mercadolan.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <h4>"Mercado Lan"</h4>
-                            <p>e-commerce test developed in PHP.</p>
-                            <a href="https://mercadolan.000webhostapp.com/backend/acerca_de.php" target="_blank">Visit Page</a>
-                            <a href="https://github.com/d3vh4n5/mercadolan" target="_blank">View Code</a>
-                            <br>
-                            <p class="status">
-                                host: <span class="orange">temporary ⚠️</span>
-                                <br>
-                                status: <span class="green">Finished</span>
-                            </p>
-                        </details>
-                    </div>
-                </div>
-                <!-- <a class="tarjeta" href="http://bit.ly/linkscv" target="newwindow" onclick="window.open('http://bit.ly/linkscv', 'newwindow', 'width=800, height=600'); return false;">
-                    <img class="imgTarjeta" src="./assets/img/scv.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <h4>Redireccionador CV</h4>
-                        <p>Mini Web App de registros y redirección con estilo retro. Hace uso del método GET para obtener información y registrarla en la DB.</p>
-                        <p>Host: Temporal ⚠️</p>
-                        <p class="status">Estado: <span class="finalizado">Finalizado</span></p>
-                    </div>
-                </a> -->
+                
             </div>
             <div class="contenedorTarjetas python">
                 <img class="tecLogo right" src="./assets/img/Python_logo_01.svg.png" alt="Python logo">
-                <div class="tarjeta">
-                    <img class="imgTarjeta" src="./assets/img/crudalumnos.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <h4>Django</h4>
-                            <p>Mini django project for learning.</p>
-                            <a href="https://d3vh4n5.pythonanywhere.com/core/" target="_blank">Visit Page</a>
-                            <a href="https://github.com/d3vh4n5/practicadjango" target="_blank">View Code</a>
-                            <br>
-                            <p class="status">
-                                host: <span class="orange">temporary ⚠️</span> <span class="red">expires: 04-10-23</span>
-                                <br>
-                                status: <span class="green">Finished</span>
-                            </p>
-                        </details>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <img class="imgTarjeta" src="./assets/img/crudcacpython.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <h4>CRUD</h4>
-                            <p>CRUD desktop app developed in Python. It only works in Windows.</p>
-                            <a href="./assets/files/crud.zip" download>Download</a>
-                            <a href="https://github.com/d3vh4n5/CRUDCaCPython" download>View Code</a>
-                            <br>
-                            <p class="status">status: <span class="green">Finished</span></p>
-                        </details>
-                    </div>
-                </div>
+                
+                
             </div>
             <div class="contenedorTarjetas node">
                 <img class="tecLogo" src="./assets/img/JavaScript-Symbol.png" alt="JavaScript logo">
-                <div class="tarjeta" href="https://app-juanangelbasgall.b4a.run/" target="_blank">
-                    <img class="imgTarjeta" src="./assets/img/node.png" alt="Node Logo">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <h4>API</h4>
-                            <p>
-                                This is an API developed with my Team as an extracurricular project of 
-                                the subject "Web Integrations" of our career as 'programming technique' Teclab.
-                            </p>
-                            <a href="https://app-juanangelbasgall.b4a.run/" target="_blank">Visit Page</a>
-                            <a href="https://github.com/d3vh4n5/APIGrupalTeclab" target="_blank">View Code</a>
-                            <br>
-                            <p class="status">
-                                host: <span class="orange">temporary ⚠️</span>
-                                <br>
-                                status: <span class="orange">Developing</span>
-                            </p>
-                        </details>
-                    </div>
-                </div>
-                <div class="tarjeta react">
-                    <img class="imgTarjeta" src="./assets/img/reactweb.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <a href="https://d3vh4n5-reactlearn.netlify.app" target="_blank">Visit Page</a>
-                            <p class="status">name: <span class="content">React App</span> type: <span class="content">Web Site</span>
-                                <br>description: <span class="content">React learn website</span>
-                                <br>status: <span class="orange">Working (learning)</span>
-                                <br>host: <span class="orange">Temporary ⚠</span> <span class="red">expires: 26-07-23</span>
-                            </p>
-                        </details>
-                    </div>
-                </div>
-                <div class="tarjeta react">
-                    <img class="imgTarjeta" src="./assets/img/reactweb.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <a href="https://react-fruteria.vercel.app/" target="_blank">Visit Page</a>
-                            <p class="status">name: <span class="content">Frutería Lunaranja</span> type: <span class="content">Web Site</span>
-                                <br>description: <span class="content">React version of an exercise made in JS for the asignature "Developing Interface" of my career in Teclab.</span>
-                                <br>status: <span class="orange">Working (learning)</span>
-                            <br>host: <span class="orange">Temporary ⚠</span> <span class="red">expires: ?</span>
-                            </p>
-                        </details>
-                    </div>
+                
+                
                 </div>
             </div>
             <div class="contenedorTarjetas ux-ui">
                 <img class="tecLogo right" src="./assets/img/ux-ui-logo.svg" alt="UX UI logo">
-                <div class="tarjeta">
-                    <img class="imgTarjeta" src="./assets/img/arbeit.png" alt="">
-                    <div class="descripcionTarjeta">
-                        <details>
-                            <summary>Click for Details</summary>
-                            <h4>"Arbeit"</h4>
-                            <p>UX-UI Design of a mobile app.</p>
-                            <a href="https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link" target="_blank">UX Report</a>
-                            <br>
-                            <p class="status">status: <span class="green">Finished</span></p>
-                        </details>
-                    </div>
-                </div>
+                
             </div>
         </section>
         <section class="contact parallax" id="contacto">

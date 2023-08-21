@@ -1,0 +1,52 @@
+// aqui va la función que crea las tarjetas
+
+const retornarCardHTML = (objeto)=>{
+    let status = ''
+    if (objeto.windowed){
+        var visit = objeto.visit_url 
+            ? `<a href="${objeto.visit_url}" target="newwindow" onclick="window.open('${objeto.visit_url}', 'newwindow', 'width=800, height=600'); return false;">Visit Page</a>`
+            : '';
+    } else {
+        var visit = objeto.visit_url 
+            ? `<a href="${objeto.visit_url}" target="_blank">Visit Page</a>`
+            : '';
+    }
+    let code = objeto.code_url
+        ? `<a href="${objeto.code_url}" target="_blank">View Code</a>`
+        : '';
+    let download = objeto.download_url
+        ? `<a href="${objeto.download_url}" download>Download</a>`
+        :''
+
+    if (objeto.status == "finished"){
+        status = '<span class="green">Finished</span>'
+    } else if (objeto.status == "developing") {
+        status = '<span class="orange">Developing</span>'
+    }
+
+    return `
+        <div class="tarjeta">
+            <img class="imgTarjeta" src="${objeto.img}" alt="Project image">
+            <div class="descripcionTarjeta">
+                <h4>"${objeto.title}"</h4>
+                <p>${objeto.description}</p>
+                ${visit}
+                ${download}
+                ${code}
+                <br>
+                <p class="status">
+                    status: ${status}
+                </p>
+            </div>
+        </div>
+    `
+}
+
+
+export const loadProjects = (array)=>{
+    const projectsContainer = document.querySelector('#projectsContainer')
+
+    array.forEach(element => {
+        projectsContainer.innerHTML += retornarCardHTML(element)
+    });
+}

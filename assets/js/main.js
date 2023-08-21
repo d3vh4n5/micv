@@ -4,8 +4,24 @@ const optionMenu = document.getElementsByClassName('optionMenu');
 const checkButton = document.getElementById('check');
 const darkScreen = document.getElementById('darkScreen')
 import { navButtonsLogic } from "./navBtnLogic.js";
+import {scrollSpy} from "./observers.js"
+import { loadProjects } from "./projects.js";
+const urlProyectos = './assets/js/projects.json'
+
+/*  
+    Hacer lo del onload, o documentLoad.
+*/
+
+/* Carga dinámica d eproyectos */
+fetch(urlProyectos)
+  .then(response=>response.json())
+  .then(data=>{
+    loadProjects(data)
+  })
 
 navButtonsLogic()
+scrollSpy()
+
 
 for (let option of optionMenu){
   option.addEventListener('click', ()=>{
@@ -26,7 +42,6 @@ darkScreen.addEventListener('click', ()=>{
 })
 
 const cambiarFondo = document.querySelectorAll('.descripcionTarjeta, .btn');
-console.log(cambiarFondo);
 if (/iPhone/i.test(navigator.userAgent)) {
   //alert('Estas en un iphone');
   for (let e of cambiarFondo){
