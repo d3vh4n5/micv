@@ -31,8 +31,8 @@ const retornarCardHTML = (objeto)=>{
         "Python": "var(--python)",
         "php": "var(--php), var(--php)",
     }
+
     const tecnologia = objeto.technology
-    console.log(tecnologia)
     let borderImageSource = techColors[tecnologia] || "var(--colorAcento), var(--colorFuente)";
 
     return `

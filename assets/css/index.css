@@ -1,2 +1,5 @@
+@import './fonts.css';
+@import './config-and-colors.css';
 @import './estilos.css';
 @import './media-queries.css';
+@import './animaciones.css';

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Fuentes/roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+      font-family: 'Play';
+      src: url('../Fuentes/play/Play-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  @font-face {
+      font-family: 'Play';
+      src: url('../Fuentes/play/Play-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Goldman';
+      src: url('../Fuentes/goldman/Goldman-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  @font-face {
+      font-family: 'Michroma';
+      src: url('../Fuentes/Michroma/Michroma-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  @font-face {
+      font-family: 'DotGothic16';
+      src: url('../Fuentes/DotGothic16/DotGothic16-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  @font-face {
+      font-family: 'geostar_fill';
+      src: url('../Fuentes/geostar_fill/GeostarFill-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }

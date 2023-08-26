@@ -2,7 +2,7 @@
     RESPONSIVE
   ==============*/
 
-  @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     header{
         padding: 3px 10px;
     }

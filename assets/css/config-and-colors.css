@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    font-size: 16px;
+    --colorFondoMenu: rgba(24, 24, 24, 0.76);
+    --colorFondoMenuSolido: rgba(34, 34, 34);
+    --colorFondoAzulOscuro: rgb(1,4,9);
+    --colorFuenteGeneral: #FBFFF1;
+    --colorAcento: rgb(81, 205, 50);
+    --colorFuente: rgb(27, 72, 197);
+    --colorFuente2: rgb(79, 79, 231);
+    --fondoGlass: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(214, 214, 214, 0.1));
+    --blurFondo: blur(7px);
+    --colorGradBoton: linear-gradient(45deg, var(--colorAcento), var(--colorFuente));
+    --anchoTarjeta: 400px;
+    /* Tech colors*/
+    --react: rgb(47, 184, 230);
+    --php: #4F5B93;
+    --python: rgba(28, 54, 139, 1), rgba(192, 176, 28, 1);
+    --node: rgba(104, 160, 99, 1), rgba(60, 135, 58, 1); 
+    --js: rgb(219, 201, 35);
+}
