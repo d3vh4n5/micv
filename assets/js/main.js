@@ -12,7 +12,7 @@ const urlProyectos = './assets/js/projects.json'
     Hacer lo del onload, o documentLoad.
 */
 
-/* Carga dinámica d eproyectos */
+/* Carga dinámica de proyectos */
 fetch(urlProyectos)
   .then(response=>response.json())
   .then(data=>{

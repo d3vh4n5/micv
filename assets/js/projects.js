@@ -24,8 +24,19 @@ const retornarCardHTML = (objeto)=>{
         status = '<span class="orange">Developing</span>'
     }
 
+    const techColors = {
+        "React": "var(--react), var(--react)",
+        "Node": "var(--node)",
+        "JS": "var(--js), var(--js)",
+        "Python": "var(--python)",
+        "php": "var(--php), var(--php)",
+    }
+    const tecnologia = objeto.technology
+    console.log(tecnologia)
+    let borderImageSource = techColors[tecnologia] || "var(--colorAcento), var(--colorFuente)";
+
     return `
-        <div class="tarjeta">
+        <div class="tarjeta" style="border-image-source: linear-gradient(45deg, ${borderImageSource});">
             <img class="imgTarjeta" src="${objeto.img}" alt="Project image">
             <div class="descripcionTarjeta">
                 <h4>"${objeto.title}"</h4>
@@ -45,6 +56,8 @@ const retornarCardHTML = (objeto)=>{
 
 export const loadProjects = (array)=>{
     const projectsContainer = document.querySelector('#projectsContainer')
+
+    projectsContainer.innerHTML = '';
 
     array.forEach(element => {
         projectsContainer.innerHTML += retornarCardHTML(element)
