@@ -6,8 +6,10 @@ const darkScreen = document.getElementById('darkScreen')
 import { navButtonsLogic } from "./navBtnLogic.js";
 import {scrollSpy} from "./observers.js"
 import { loadProjects } from "./projects.js";
+import { easterEgg } from "./easterEggs.js";
 const urlProyectos = './assets/js/projects.json'
 
+easterEgg()
 /*  
     Hacer lo del onload, o documentLoad.
 */
