@@ -6,6 +6,7 @@
     z-index: 200;
     display: grid;
     place-items: center;
+    /* transition: opacity 1s, visibility 1s; */
 }
 
 #preloader img{
@@ -13,6 +14,8 @@
 }
 
 .fade-out{
+    /* opacity: 0;
+    visibility: hidden; */
     animation: fade-out 1s ease forwards;
 }
 

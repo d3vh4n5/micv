@@ -46,7 +46,7 @@
     }
     .menu{
         position:fixed;
-        width: 70%;
+        width: min(70%, 250px);
         height: 100vh;
         background: var(--colorFondoMenuSolido);
         right: -100%;
