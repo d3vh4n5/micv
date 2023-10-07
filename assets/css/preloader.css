@@ -1,0 +1,24 @@
+#preloader{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    display: grid;
+    place-items: center;
+}
+
+#preloader img{
+    width: 50px;
+}
+
+.fade-out{
+    animation: fade-out 1s ease forwards;
+}
+
+@keyframes fade-out{
+    100%{
+        filter: opacity(0);
+        display: none !important;
+    }
+}
