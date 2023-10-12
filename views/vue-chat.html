@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: yellowgreen;
+            font-family: monospace
+        }
+
+        .info-card{
+            position: relative;
+            background-color: rgba(94, 94, 64, 0.589);
+            padding: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            /* border-left: 5px solid royalblue; */
+        }
+
+        .info-card::before{
+            display: block;
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: yellowgreen;
+        }
+
+        .mensajes{
+            /* position: relative; */
+            border: 1px solid yellowgreen;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 0 10px;
+            height: 200px;
+            /* width: 400px; */
+            width: 70%;
+            overflow: auto;
+            scrollbar-gutter: stable both-edges;
+            scroll-behavior: smooth;
+        }
+        
+        .mensajes::-webkit-scrollbar{
+            margin: 5px;
+            width: 4px;
+            padding: 1px;
+            border-radius: 20px;
+            background-color: rgb(20, 20, 20);
+        }
+        .mensajes::-webkit-scrollbar-thumb{
+            background-color: yellowgreen;
+            border-radius: 20px;
+            width: 6px;
+            /* position: relative; */
+        }
+        .mensajes p{
+            background-color: rgba(94, 94, 64, 0.589);
+            padding: 5px;
+            width: 70%;
+            border-radius: 5px;
+            
+            &.other{
+                background-color: rgba(64, 83, 94, 0.589);
+                position: relative;
+                right: -28%;
+                color: rgb(0, 225, 255);
+            }
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        /* #endMsj{
+            border: 1px solid red; 
+            margin-bottom: 20px;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="info-card">
+        <h3>title</h3>
+        <p>
+            content
+            content
+            content
+            content
+            content
+            content
+        </p>
+    </div>
+
+    <div class="chat" id="chat">
+        <div class="mensajes" id="mensajes">
+                <p 
+                    v-for="mensaje in mensajes"
+                    v-bind:class="{other: mensaje.author=='other'}"
+                >{{mensaje.message}}</p>
+            <div id="endMsj"></div>
+        </div>
+        <input type="text" v-model="nuevoMensaje" @keyup.enter="sumarMensaje">
+        <button @click="sumarMensaje">Enviar</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+         const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const message = ref('Hello vue!')
+                return {
+                message
+                }
+            },
+            data(){
+                return {
+                    mensajes : [
+                        {message: "Hola", author: "user"},
+                        {message: "Como va?", author: "user"},
+                        {message: "Todo bien.. ", author: "other"},
+                        {message: "Vos?", author: "other"},
+                    ],
+                    nuevoMensaje: ref("")
+                }
+            },
+            methods : {
+                sumarMensaje(){
+                    if (this.nuevoMensaje.trim() === ''){
+                        return
+                    } else {
+
+                        this.mensajes.push({message: this.nuevoMensaje, author: "user"})
+                        
+                        // Espera a que el DOM se actualice antes de calcular la altura
+                        this.$nextTick(() => {
+                            var chat = document.getElementById("mensajes");
+                            chat.scrollTop = chat.scrollHeight;
+                            
+                            // var end = document.getElementById("endMsj");
+                            // end.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                        });
+                        this.nuevoMensaje = "";
+                    }
+                }
+            }
+        }).mount('#chat')
+    </script>
+</body>
+</html>
