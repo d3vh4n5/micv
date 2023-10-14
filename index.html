@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Juan Basgall | Full Stack, JavaScript, React, Node, Python, Django, Tkinter, PHP, SQL</title>
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#181818">
+    <meta name="description" content="Portfolio de Juan Basgall, desarrollador fulltack">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Python, Vue, Django, PHP, Laravel, Codeigniter, Tkinter, Portfolio, Juan, Juan Angel, Basgall, desarrollador, fullstack, Full-Stack, programador, Frontend, front-end, front, back, backend, Back-End, teclab, wamnet, software">
+    <meta name="author" content="Juan Angel Basgall">
+    <link rel="alternate" href="https://github.com/d3vh4n5"> <!-- pagina alterna (otro idioma) -->
+    <link rel="canonical" href="http://d3vh4n5.com.ar/"> <!-- La principal de la que tiene www y la que no -->
+
+    <!-- OPEN GRAPH  https://www.opengraph.xyz/ -->
     <meta property="og:title" content="Portfolio DevHans">
     <meta property="og:description" content="Portfolio personal de Juan Basgall (d3vh4n5)">
-    <meta property="og:image" content="https://d3vh4n5.com.ar/assets/img/dEVhans.png">
+    <meta propery="og:type" content="portfolio">
+    <meta property="og:image" content="https://d3vh4n5.com.ar/assets/img/perfil-transparente.png">
     <meta property="og:site_name" content="Portfolio d3vh4n5">
-    <title>Portfolio Juan Basgall</title>
+    <meta property="og:url" content="http://d3vh4n5.com.ar/">
+    
     <!--
         https://cdnjs.com/libraries/font-awesome
         https://fontawesome.com/icons
@@ -47,10 +60,10 @@
     </header>
     <main>
         <section class="uno" id="inicio">
-            <img src="./assets/img/perfil-transparente.png" alt="foto de Juan" class="yo">
+            <img src="./assets/img/perfil-transparente.png" alt="Foto de Juan" title="Foto de Juan" class="yo">
             <div class="texto">
-                <p>Welcome!</p>
-                <h2 class="titulos">I'm Juan Basgall</h2>
+                <!-- <p>Welcome!</p> -->
+                <h1 class="titulos">Portfolio Juan Basgall</h1>
                 <h3><i>Full-Stack Developer || UX-UI Designer</i></h3>
                 <a class="btnCV pulso" title="Click to download" href="./assets/files/CV_Juan_Basgall_Programador.pdf" target="_blank">Download CV</a>
             </div>
@@ -123,30 +136,75 @@
             </div>
         </section>
         <section class="contact parallax" id="contacto">
-            <form action="">
-                <h2 class="titulos">Contact</h2>
-                <label for="">Mail</label>
-                <input type="email" id="email" required>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend>
+                        <h2 class="titulos">Contact</h2>
+                    </legend>
+
+                    <label for="email">
+                        Mail
+                        <input type="email" id="email" required>
+                    </label>
+                    <label for="name">
+                        Name:
+                        <input type="text" id="name" name="name" required><br>
+                    </label>
+                    <label for="message">
+                        Message:
+                        <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+                    </label>
+                </fieldset>
                 <button type="submit" class="btn" onclick="sendEmail()" alt="Enviar mail"><p class="pulso">Submit</p></button>
             </form>
         </section>
+        <!-- <section id="faqs">
+            <d class="container">
+
+                <h2>Preguntas frecuentes</h2>
+                <details open>
+                    <summary open>¿Que estudios tienes?</summary>
+                    <p>Estudie en Teclab y  codo a codo</p>
+                </details>
+                <details>
+                    <summary>¿Cuales son tus hobbies?</summary>
+                    <p>hobbies</p>
+                </details>
+                <details>
+                    <summary>¿Cual es tu lenguaje Favorito?</summary>
+                    <p>JavaScript</p>
+                </details>
+                <details>
+                    <summary>¿Haces trabajos freelance?</summary>
+                    <p>Si, hice los siguientes:
+                        <ul>
+                            <li>Trabajo 1</li>
+                            <li>Trabajo 2</li>
+                            <li>Trabajo 3</li>
+                        </ul>
+                    </p>
+                </details>
+                <details>
+                    <summary>Experiencia</summary>
+                    <p>Wamnet</p>
+                </details>
+            </div>
+        </section> -->
         <footer>
             <div class="redes">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/juanangelbasgall/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/d3vh4n5"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/juanangelbasgall/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/d3vh4n5" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a></li>
                     <!--
-                    <li><a href=""><i class="fa-brands fa-square-behance"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-basketball"> Dribbble</i></a></li>
+                    <li><a href="" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-behance"></i></a></li>
+                    <li><a href="" target="_blank" rel="noreferrer"><i class="fa-solid fa-basketball"> Dribbble</i></a></li>
                     -->
-                    <li><a href="https://wa.me/+543489553144" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+                    <li><a href="https://wa.me/+543489553144" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a></li>
                 </ul>
             </div>
-            <p>Designed and developed by Juan Angel Basgall (<a href="#inicio" class="linkFooter" alt="Sitio web del desarrollador">d3vh4n5</a>) Copyright © 2023 d3vh4n5 λ.</p>
+            <small>
+                Designed and developed by Juan Angel Basgall (<a href="#inicio" class="linkFooter" alt="Sitio web del desarrollador">d3vh4n5</a>) Copyright © 2023 d3vh4n5 λ.
+            </small>
         </footer>
     </main>
 </body>

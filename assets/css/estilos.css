@@ -241,8 +241,8 @@ main{
 }
 .texto{
     padding: 2rem;
-    width: 40%;
-    max-width: 600px;
+    width: 50%;
+    max-width: 650px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -482,8 +482,14 @@ summary:hover{
     padding: 2rem;
     border-radius: 10px;
     color: var(--colorFuenteGeneral);
+}
+fieldset{
     display: flex;
     flex-direction: column;
+    border: transparent;
+}
+legend{
+    text-align: center;
 }
 .contact > form input, textarea, button, label{
     margin: 10px 0;
