@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            color-scheme: light dark;
+        }
         body{
-            background-color: black;
-            color: yellowgreen;
+            /* background-color: black; */
+            
             font-family: monospace
         }
 
@@ -39,7 +42,7 @@
             padding: 0 10px;
             height: 200px;
             /* width: 400px; */
-            width: 70%;
+            width: clamp(300px, 70%, 500px);
             overflow: auto;
             scrollbar-gutter: stable both-edges;
             scroll-behavior: smooth;
@@ -61,13 +64,15 @@
         .mensajes p{
             background-color: rgba(94, 94, 64, 0.589);
             padding: 5px;
-            width: 70%;
-            border-radius: 5px;
+            width: fit-content;
+            max-width: 70%;
+            border-radius: 0 5px 5px;
             
             &.other{
                 background-color: rgba(64, 83, 94, 0.589);
+                border-radius: 5px 0 5px 5px;
                 position: relative;
-                right: -28%;
+                margin-left: auto;
                 color: rgb(0, 225, 255);
             }
         }
@@ -78,7 +83,11 @@
             border: 1px solid red; 
             margin-bottom: 20px;
         } */
-
+        @media (prefers-color-scheme: dark){
+            body{
+                color: yellowgreen;
+            }
+        }
     </style>
 </head>
 <body>
@@ -108,11 +117,16 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
-         const { createApp, ref } = Vue
+        // import { createApp, ref, onMounted } from 'vue';
+        const { createApp, ref, onMounted } = Vue
 
         createApp({
             setup() {
                 const message = ref('Hello vue!')
+                onMounted(() => {
+                    const end = document.getElementById("endMsj");
+                    end.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                });
                 return {
                 message
                 }
@@ -134,6 +148,12 @@
                 }
             },
             methods : {
+                scrollToEnd(){
+                    var chat = document.getElementById("mensajes");
+                    chat.scrollTop = chat.scrollHeight;
+                    // var end = document.getElementById("endMsj");
+                    // end.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                },
                 sumarMensaje(){
                     if (this.nuevoMensaje.trim() === ''){
                         return
@@ -143,17 +163,25 @@
                         
                         // Espera a que el DOM se actualice antes de calcular la altura
                         this.$nextTick(() => {
-                            var chat = document.getElementById("mensajes");
-                            chat.scrollTop = chat.scrollHeight;
-                            
-                            // var end = document.getElementById("endMsj");
-                            // end.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                            this.scrollToEnd()
                         });
                         this.nuevoMensaje = "";
                     }
                 }
-            }
+            },
+            // así no funcionó, aparentemente es de vue 2
+            // mounted() {
+            //     onMounted(() => {
+            //         this.scrollToEnd();
+            //     });
+            // }
         }).mount('#chat')
+
+        // Solo funcionó con vanila JS
+        // window.addEventListener('load', ()=>{
+        //     const end = document.getElementById("endMsj");
+        //     end.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        // })
     </script>
 </body>
 </html>
