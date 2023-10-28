@@ -116,7 +116,7 @@
         "description" : "This is a chat app developed in Vue, using a socket API done by me with node + socket.io + express + cors + morgan",
         "img" : "https://i0.wp.com/blog.webtraining.zone/wp-content/uploads/2018/01/curso-profesional-vue.jpg?resize=825%2C510&ssl=1",
         "type" : "Web app",
-        "technology" : "Python",
+        "technology" : "Node",
         "status" : "finished",
         "host" : "Temporary",
         "hosted_in" : "https://www.back4app.com/",
