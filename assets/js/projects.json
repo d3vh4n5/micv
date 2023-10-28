@@ -112,6 +112,20 @@
         "download_url" : "./assets/files/crud.zip"
     },
     {
+        "title" : "Vue chat + Socket API",
+        "description" : "This is a chat app developed in Vue, using a socket API done by me with node + socket.io + express + cors + morgan",
+        "img" : "https://i0.wp.com/blog.webtraining.zone/wp-content/uploads/2018/01/curso-profesional-vue.jpg?resize=825%2C510&ssl=1",
+        "type" : "Web app",
+        "technology" : "Python",
+        "status" : "finished",
+        "host" : "Temporary",
+        "hosted_in" : "https://www.back4app.com/",
+        "visit_url" : "https://vue-chat-d3vh4n5.netlify.app/",
+        "windowed" : false,
+        "code_url" : "",
+        "download_url" : ""
+    },
+    {
         "title" : "CV Redirector",
         "description" : "Mini Web App de registros y redirección con estilo retro. Hace uso del método GET para obtener información y registrarla en la DB.",
         "img" : "./assets/img/scv.png",
