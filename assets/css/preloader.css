@@ -13,6 +13,15 @@
     width: 50px;
 }
 
+.spinner{
+    background-color: red;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background: url('../img/Spinner-bnet.png') 0 0;
+    animation: Spinner-animationDefault .7s steps(20) infinite;
+}
+
 .fade-out{
     /* opacity: 0;
     visibility: hidden; */
