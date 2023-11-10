@@ -15,7 +15,7 @@ a{
 }
 a:hover{
     color: var(--colorAcento);
-    cursor: pointer;
+    cursor: none;
 }
 /*
 informacion de como hizo el chico el fondo de su portfolio:
@@ -53,6 +53,10 @@ h1{
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
+}
+
+h1:hover{
+    cursor:default;
 }
 nav{
     display: flex;
@@ -120,7 +124,7 @@ li{
     color: var(--colorAcento);
     border: 1px solid var(--colorAcento);
     background: var(--colorFondo);
-    cursor: pointer;
+    cursor: none;
     transition: 0.2s;
 }
 .contacto:hover .link{
@@ -136,7 +140,7 @@ li{
     width: fit-content;
     font-size: 30px;
     font-weight: bolder;
-    cursor: pointer;
+    cursor: none;
     display: none;
     transition: 0.4s;
 }
@@ -149,7 +153,7 @@ li{
 .mostrar-menu:hover,
 .esconder-menu:hover{
     color: var(--colorAcento);
-    cursor: pointer;
+    cursor: none;
 }
 #check{
     display:none;
@@ -413,7 +417,7 @@ main{
     transition: all .5s;
 }
 summary:hover{
-    cursor: pointer;
+    cursor: none;
 }
 .descripcionTarjeta{
     position: absolute;
@@ -521,7 +525,7 @@ legend{
     font-weight: 600;
 }
 .contact button:hover{
-    cursor: pointer;
+    cursor: none;
     background: var(--colorAcento);
     color: var(--colorFuenteGeneral);
     animation: pulso 10s 9999s;

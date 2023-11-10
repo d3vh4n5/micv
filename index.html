@@ -57,6 +57,7 @@
                 &#215
             </label>
         </nav>
+        <img id="cursor" src="./assets/img/wc-mouse.png" alt="👆">
     </header>
     <main>
         <section class="uno" id="inicio">
@@ -138,32 +139,116 @@
                 <img class="tecLogo right" src="./assets/img/ux-ui-logo.svg" alt="UX UI logo">
             </div>
         </section>
-        <section class="contact parallax" id="contacto">
-            <form action="/" method="post">
-                <fieldset>
-                    <legend>
-                        <h2 class="titulos">Contact</h2>
-                    </legend>
+        <section id="exs">
+            <div class="container">
+                <h2>EXS</h2>
 
-                    <label for="email">
-                        Mail
-                        <input type="email" id="email" required>
-                    </label>
-                    <label for="name">
-                        Name:
-                        <input type="text" id="name" name="name" required><br>
-                    </label>
-                    <label for="message">
-                        Message:
-                        <textarea id="message" name="message" cols="30" rows="10" required></textarea>
-                    </label>
-                </fieldset>
-                <button type="submit" class="btn" onclick="sendEmail()" alt="Enviar mail"><p class="pulso">Submit</p></button>
-            </form>
+
+
+                <style>
+                    body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: teal;
+            }
+            
+            .card-container{
+                perspective: 1000px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+            }
+            
+            .carta {
+                width: 200px;
+                height: 300px;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: transform .5s;
+            }
+            
+            .carta:hover{
+                cursor: url('wc-mouse-sword.png'), auto;
+                cursor: none;
+            }
+            
+            .carta:hover > .front, .carta:hover > .back {
+                /* box-shadow: 0px 0px 10px 1px whitesmoke; */
+            }
+            .carta:hover > .front{
+                transform: rotateY(180deg);
+            }
+            .carta:hover > .back {
+                transform: rotateY(360deg);
+            }
+            
+            .front,
+            .back {
+                padding: 10px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 22px;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                backface-visibility: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: white;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 15px;
+                transition: transform .7s ease;
+            }
+            
+            .front {
+                background-color: #3498dbb9; /* Color del frente */
+            }
+            
+            .back {
+                background-color: rgb(202, 202, 202);
+                color: black;
+                transform: rotateY(180deg);
+                text-align: center;
+            }
+            
+                </style>
+
+
+
+
+                Hacer estas cartas, y transparentes, y con Vue ;-)
+
+    <div class="card-container">
+        <div class="carta">
+            <div class="back">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, aperiam adipisci accusantium vitae molestias quia.
+            </div>
+            <div class="front">Contenido Frontal</div>
+        </div>
+        <div class="carta">
+            <div class="back">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, aperiam adipisci accusantium vitae molestias quia.
+            </div>
+            <div class="front">Contenido Frontal</div>
+        </div>
+        <div class="carta">
+            <div class="back">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, aperiam adipisci accusantium vitae molestias quia.
+            </div>
+            <div class="front">Contenido Frontal</div>
+        </div>
+    </div>
+            </div>
         </section>
-        <!-- <section id="faqs">
-            <d class="container">
-
+        <section id="faqs">
+            <div class="container">
+                
                 <h2>Preguntas frecuentes</h2>
                 <details open>
                     <summary open>¿Que estudios tienes?</summary>
@@ -192,7 +277,30 @@
                     <p>Wamnet</p>
                 </details>
             </div>
-        </section> -->
+        </section>
+        <section class="contact parallax" id="contacto">
+            <form action="/" method="post">
+                <fieldset>
+                    <legend>
+                        <h2 class="titulos">Contact</h2>
+                    </legend>
+
+                    <label for="email">
+                        Mail
+                        <input type="email" id="email" required>
+                    </label>
+                    <label for="name">
+                        Name:
+                        <input type="text" id="name" name="name" required><br>
+                    </label>
+                    <label for="message">
+                        Message:
+                        <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+                    </label>
+                </fieldset>
+                <button type="submit" class="btn" onclick="sendEmail()" alt="Enviar mail"><p class="pulso">Submit</p></button>
+            </form>
+        </section>
         <footer>
             <div class="redes">
                 <ul>
@@ -210,5 +318,8 @@
             </small>
         </footer>
     </main>
+
+
+    <script src="./assets/js/mouse.js"></script>
 </body>
 </html>
