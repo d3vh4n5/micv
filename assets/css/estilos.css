@@ -87,6 +87,7 @@ li{
     opacity: .8;
     height: 7%;
     width: 80%;
+    min-width: fit-content;
     border-radius: 1rem;
     align-items: center;
     display: flex;
@@ -193,7 +194,7 @@ section{
     background-position: 100%;
     min-height: 100%;
 }
-.skills, .contact{
+.skills, .exs, .contact{
     height: fit-content;
     padding: 50px;
 }
@@ -259,6 +260,7 @@ main{
     font-size: 3rem;
     color: var(--colorFuenteGeneral);
     font-family: play;
+    text-align: center;
 }
 .texto h3{
     color: var(--colorAcento);
@@ -307,17 +309,21 @@ main{
     flex-direction: column;
     gap: 50px;
 }
+
 .contenedorConocimientos p{
     margin-bottom: 2rem;
 }
+
 .contenedorBio{
     display: flex;
     gap: 20px;
 }
+
 .contenedorBio img{
     width: 5rem;
     flex: 2;
 }
+
 .contenedorBioTextos{
     padding-top: 4rem;
     display: flex;
@@ -327,6 +333,7 @@ main{
     flex: 9;
     font-size: 1.2rem;
 }
+
 .skills ul{
     margin: 0 auto;
     font-size: 1.5rem;
@@ -334,12 +341,14 @@ main{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .skills li{
     /* margin: 1rem;
     display: flex;
     flex-direction: column; */
     animation: cambiarColor 3s ease alternate-reverse infinite;
 }
+
 /* .skills i{
     margin: 2rem;
 } */
@@ -347,7 +356,7 @@ main{
 /*=================
     PROYECTOS
 ==================*/
-.projects{
+.projects, .faqs{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
         circle at 33% 10%,
         rgb(1, 25, 43) 5%,
