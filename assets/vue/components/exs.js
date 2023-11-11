@@ -1,7 +1,8 @@
-const { createApp, ref } = Vue
+// const { createApp, ref } = Vue
 
-  createApp({
+//   createApp({
 
+const exs = {
     setup() {
       const message = ref('Hello vue!')
       return {
@@ -15,9 +16,11 @@ const { createApp, ref } = Vue
         }
     },
     mounted(){
-        axios.get('../assets/js/exs.json')
+        axios.get('../../assets/data/exs.json')
             .then( resp => this.cards = resp.data)
     }
 
+}
+  // }).mount('#exs')
 
-  }).mount('#exs')
+export default exs

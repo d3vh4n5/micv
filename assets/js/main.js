@@ -7,7 +7,7 @@ import { navButtonsLogic } from "./navBtnLogic.js";
 import {scrollSpy} from "./observers.js"
 import { loadProjects } from "./projects.js";
 import { easterEgg } from "./easterEggs.js";
-const urlProyectos = './assets/js/projects.json'
+const urlProyectos = './assets/data/projects.json'
 
 easterEgg()
 /*  
