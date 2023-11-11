@@ -50,7 +50,7 @@
                 <li><a class="optionMenu" href="#skills" title="About me">Skills</a></li>
                 <li><a class="optionMenu" href="#proyectos" title="Visit my projects">Projects</a></li>
                 <li><a class="optionMenu" href="#exs" title="Exercises and Experiments">EXS</a></li>
-                <li><a class="optionMenu" href="#faqs" title="Frecuently Asked Questions As">faqs</a></li>
+                <li><a class="optionMenu" href="#faqs" title="Frecuently Asked Questions">faqs</a></li>
                 <li class="contacto"><span class="contenedorLink" title="Contact me"><a href="#contacto" class="optionMenu link">contact me</a></span></li>
             </ul>
             <label for="check"  class="esconder-menu">
@@ -142,12 +142,12 @@
         <section id="exs" class="exs">
             <div class="container">
                 <h2 class="titulos">
-                    EXS
-                    <br>
-                    ⚠️ Sección en construcción
+                    Exercises and Experiments
                 </h2>
-
-
+                
+                
+                ⚠️ Sección en construcción
+                <!-- Pasar a componentes y hacer un vue principal -->
                 <div class="card-container">
                     <div class="carta" v-for="card in cards">
                         <div class="back">
@@ -158,6 +158,8 @@
                         </div>
                         <div class="front">
                             {{ card.title }}
+
+                            ⚛️
                         </div>
                     </div>
                 </div>
@@ -166,13 +168,34 @@
         <section id="faqs" class="faqs">
             <div class="container">
                 
-                <h2 class="titulos">Preguntas frecuentes</h2>
+                <h2 class="titulos">
+                    Frecuently Asked Questions
+                </h2>
 
                 ⚠️ Sección en construcción
 
                 <details open>
                     <summary open>¿Que estudios tienes?</summary>
                     <p>Estudie en Teclab y  codo a codo, los titulos, y cursos etc.</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit sunt temporibus iure error nobis dolor amet quos. Sapiente, dignissimos reprehenderit deleniti molestiae consequatur minima voluptates similique enim iusto voluptatem, ipsam et officiis ut. Ex incidunt nam earum voluptate quaerat!
+
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae eveniet rem, pariatur totam laboriosam.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae eveniet rem, pariatur totam laboriosam.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae eveniet rem, pariatur totam laboriosam.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae eveniet rem, pariatur totam laboriosam.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae eveniet rem, pariatur totam laboriosam.
+                        </li>
+                    </ul>
                 </details>
                 <details>
                     <summary>¿Cuales son tus hobbies?</summary>

@@ -3,6 +3,7 @@
     perspective: 1000px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -22,7 +23,7 @@
 }
 
 .carta:hover > .front, .carta:hover > .back {
-    box-shadow: 0px 0px 10px 1px whitesmoke;
+    box-shadow: 0px 0px 10px 1px turquoise;
 }
 .carta:hover > .front{
     transform: rotateY(180deg);
