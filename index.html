@@ -60,16 +60,6 @@
         <img id="cursor" src="./assets/img/wc-mouse.png" alt="👆">
     </header>
     <main id="app">
-        <section>
-            <div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1>aqui ira la app</h1>
-                <saludo></saludo>
-            </div>
-        </section>
         <section class="uno" id="inicio">
             <img src="./assets/img/perfil-transparente.png" alt="Foto de Juan" title="Foto de Juan" class="yo">
             <div class="texto">
@@ -157,23 +147,10 @@
                 
                 
                 ⚠️ Sección en construcción
-                <!-- Pasar a componentes y hacer un vue principal -->
-                <div class="card-container">
-                    <!-- pasar al template y pasarle propiedades  -->
-                    <div class="carta" v-for="card in cards">
-                        <div class="back">
-                            <p>
-                                {{ card.description }}
-                            </p>
-                            <a :href=card.visit_url v-if="card.visit_url != ''">Visit</a>
-                        </div>
-                        <div class="front">
-                            {{ card.title }}
 
-                            ⚛️
-                        </div>
-                    </div>
-                </div>
+                <Exs></Exs>
+
+                
             </div>
         </section>
         <section id="faqs" class="faqs">
@@ -275,7 +252,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./assets/vue/exs.js"></script>
     <script type="module" src="./assets/vue/app.js"></script>
     <script src="./assets/js/mouse.js"></script>
 </body>

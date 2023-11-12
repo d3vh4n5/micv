@@ -1,5 +1,4 @@
-import componente1 from './components/componente1.js';
-import exs from './components/exs.js';
+import Exs from './components/Exs.js';
 
 const componente2 = {
     template: `
@@ -26,11 +25,11 @@ const componente2 = {
     }
 }
 
-const miAplicacion = Vue.createApp({
+
+Vue.createApp({
 
     components: {
-        saludo : componente1,
         mouse: componente2,
-        exs : exs,
+        Exs : Exs,
     }
 }).mount("#app")

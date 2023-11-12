@@ -1,8 +1,16 @@
-// const { createApp, ref } = Vue
+const { createApp, ref } = Vue
 
 //   createApp({
 
-const exs = {
+import CardExs from './CardExs.js';
+
+const Exs = {
+  template: `
+      <div class="card-container">
+        <CardExs :project="project" v-for="project in projects"></CardExs>
+      </div>
+  `,
+
     setup() {
       const message = ref('Hello vue!')
       return {
@@ -12,15 +20,22 @@ const exs = {
 
     data(){
         return {
-            cards: []
+            projects: [],
         }
     },
-    mounted(){
+    methods : {
+      obtenerDatos(){
         axios.get('../../assets/data/exs.json')
-            .then( resp => this.cards = resp.data)
+            .then( resp => this.projects = resp.data)
+      },
+    },
+    mounted(){
+        this.obtenerDatos();
+    },
+    components: {
+      CardExs : CardExs
     }
-
 }
   // }).mount('#exs')
 
-export default exs
+export default Exs
