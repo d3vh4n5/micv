@@ -1,4 +1,5 @@
 import Exs from './components/Exs.js';
+import FooterComponent from './components/FooterComponent.js';
 
 const componente2 = {
     template: `
@@ -30,6 +31,7 @@ Vue.createApp({
 
     components: {
         mouse: componente2,
-        Exs : Exs,
+        exs : Exs,
+        footercomponent : FooterComponent,
     }
 }).mount("#app")
