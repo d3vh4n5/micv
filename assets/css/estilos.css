@@ -376,25 +376,7 @@ main{
     width: 100%;
     overflow: hidden;
 }
-.tecLogo{
-    user-select: none;
-    position: absolute;
-    width: 60px;
-    left: -5%;
-    opacity: .03;
-}
-.php{
-    background: rgb(79, 66, 194, .05);
-}
-.python{
-    background: linear-gradient(to right bottom, rgba(28, 54, 139, .05), rgba(192, 176, 28, .05));
-}
-.node{
-    background: linear-gradient(to right, rgba(192, 176, 28, .05),RGBa(104, 160, 99, .05), RGBa(60, 135, 58, .05));
-}
-.ux-ui{
-    background: rgba(48, 48, 48, .05);
-}
+
 .tarjeta{
     all: unset;
     position: relative;
