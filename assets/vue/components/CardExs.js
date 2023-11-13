@@ -8,7 +8,7 @@ const CardExs = {
                 <p>
                     {{ project.description }}
                 </p>
-                <a :href=project.visit_url v-if="project.visit_url != ''">Visit</a>
+                <a :href=project.visit_url v-if="project.visit_url != ''" target="_blank">Visit</a>
             </div>
             <div class="front">
                 <div class="img" :style="{ background: 'url(' + project.img + ')' }"></div>

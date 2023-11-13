@@ -71,6 +71,7 @@ ul{
 li{
     all: unset;
     margin: 5px 20px;
+    min-width: fit-content;
 }
 .optionMenu{
     all: unset;
@@ -87,7 +88,6 @@ li{
     opacity: .8;
     height: 7%;
     width: 80%;
-    min-width: fit-content;
     border-radius: 1rem;
     align-items: center;
     display: flex;
@@ -364,6 +364,7 @@ main{
     background-size: cover;
     display: flex;
     flex-direction: column;
+    min-height: 80%;
 }
 .contenedorTarjetas{
     margin: 10px 0;
@@ -466,8 +467,13 @@ summary:hover{
 .contact{
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    min-height: fit-content;
+    height: 80%;
     padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
+        circle at 33% 10%,
+        rgb(1, 25, 43) 5%,
+         var(--colorFondoAzulOscuro)60%);
 }
 .contact form{
     border: 1px solid rgba(245, 245, 245, 0.1);
@@ -507,7 +513,8 @@ legend{
 .contact button{
     color: var(--colorAcento);
     text-transform: uppercase;
-    background: linear-gradient(to right bottom,transparent, transparent 50%,var(--colorAcento)),url(../img/rm373batch2-08.jpg);
+    /* background: linear-gradient(to right bottom,transparent, transparent 50%,var(--colorAcento)),url(../img/rm373batch2-08.jpg); */
+    background: url(../img/rm373batch2-08.jpg);
     background-attachment: fixed;
     background-position: 50%;
     background-repeat: no-repeat;

@@ -16,7 +16,7 @@
     {
         "title" : "DRF Mini Api",
         "description" : "Mini django rest framework API.",
-        "img" : "./assets/img/crudalumnos.png",
+        "img" : "./assets/img/api.jpg",
         "type" : "API RESTFUL",
         "technology" : "Python",
         "status" : "finished",
@@ -44,7 +44,7 @@
     {
         "title" : "Frutería Lunaranja",
         "description" : "React version of an exercise made in JS for the asignature 'Develope Interface' of my career in Teclab.",
-        "img" : "./assets/img/reactweb.png",
+        "img" : "./assets/img/lunaranja.png",
         "type" : "web site",
         "technology" : "React",
         "status" : "finished",

@@ -16,7 +16,7 @@
     {
         "title" : "Node API REST",
         "description" : "This is an API developed with my Team as an extracurricular project of the subject 'Web Integrations' of our career as 'programming technique' Teclab.",
-        "img" : "./assets/img/node.png",
+        "img" : "./assets/img/api.png",
         "type" : "web site",
         "technology" : "Node",
         "status" : "developing",

@@ -55,7 +55,9 @@
 }
 .img{
     height: 40%;
-    background-size: contain !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: 50% !important;
     filter: opacity(.7);
 }
 
@@ -75,6 +77,7 @@
     flex-wrap: wrap;
     width: 100%;
     overflow: hidden;
+    opacity: .4;
 }
 
 .tech-logo{
@@ -82,7 +85,6 @@
     position: absolute;
     width: 90px;
     left: -5%;
-    opacity: .7;
 }
 .php{
     background: rgb(79, 66, 194, .5);
