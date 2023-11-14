@@ -1,10 +1,12 @@
+const { ref } = Vue
+
 const CardExs = {
     props : {
         project: Object,
     },
     template: `
         <div class="carta">
-            <div class="back">
+            <div class="back" ref="back">
                 <p>
                     {{ project.description }}
                 </p>
@@ -37,7 +39,24 @@ const CardExs = {
     .carta h2{
         color: blue;
     }
-    `
+    `,
+    methods: {
+        mouseCursorGradientTracking(){
+            let back = this.$refs.back;
+            // se va agregando a medida que se van montando, por eso está asi
+            // y no como un mapeo de un array
+            back.addEventListener("mousemove", e=>{
+                let rect = e.target.getBoundingClientRect();
+                let x = e.clientX - rect.left;
+                let y = e.clientY - rect.top;
+                back.style.setProperty('--x', x + 'px')
+                back.style.setProperty('--y', y + 'px')
+            })
+        },
+    },
+    mounted(){
+        this.mouseCursorGradientTracking();
+    }
     
 }
 
