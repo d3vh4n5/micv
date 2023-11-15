@@ -2,23 +2,32 @@
 
 :root{
     
-    --bg2: lightblue;
-    --card-border: red;
+    --bg2: white;
+    --card-border: lightgray;
+    --color-anchor: rgb(105, 23, 172);
+    --shadow: rgba(0, 0, 0, 0.2);
 }
 
 
 body {
-    background-color: white;
+    background-color: #e7e7e7;
     color: black;
     transition: background-color 0.5s, color 0.5s;
+    transition: all .5s ease;
+  }
+
+  a{
+    color: var(--color-anchor);
   }
 
 .dark-mode {
-    --bg2: darkblue;
-    --card-border: pink;
+    --bg2: rgb(39, 39, 39);
+    --card-border: transparent;
+    --color-anchor: teal;
+    --shadow: transparent;
 
     background-color: rgb(22, 22, 22);
-    color: rgb(248, 250, 126);
+    color: lightblue;
   }
 
   .dark-mode-switch {
@@ -82,7 +91,18 @@ body {
 
 
 
-  .card{
-    background: var(--bg2);
-    border: 3px solid var(--card-border);
+ 
+
+  dl, .card{
+    border: 1px solid var(--card-border);
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--bg2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0px 0px 15px var(--shadow);
+  }
+
+  dt{
+    font-weight: bold;
   }
