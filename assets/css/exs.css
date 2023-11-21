@@ -1,5 +1,6 @@
 
 .card-container{
+    margin-top: 10rem;
     perspective: 1000px;
     width: 100%;
     display: flex;
@@ -99,6 +100,14 @@
 }
 .ux-ui{
     background: rgba(48, 48, 48, .5);
+}
+
+.java{
+    background-color: white;
+    
+    & img{
+        width: 70px;
+    }
 }
 
 

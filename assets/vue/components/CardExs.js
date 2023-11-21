@@ -32,6 +32,10 @@ const CardExs = {
                 <div class="tech-container ux-ui" v-if="project.technology === 'ux ui'">
                     <img class="tech-logo right" src="./assets/img/ux-ui-logo.svg" alt="UX UI logo">
                 </div>
+
+                <div class="tech-container java" v-if="project.technology === 'Java'">
+                    <img class="tech-logo right" src="./assets/img/java.png" alt="UX UI logo">
+                </div>
             </div>
         </div>
     `,

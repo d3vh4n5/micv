@@ -44,13 +44,15 @@ header{
     padding: 5px 0;
     z-index: 100;
 }
-h1{
+h1, .logo{
     opacity: .8;
     color: rgba(153, 205, 50, 0.3);
     padding: 5px 30px;
     display: flex;
     align-items: center;
     font-family: Goldman;
+    font-size: 2.5rem;
+    font-weight: bold;
     background-image: url(../img/hacker.gif);
     background-position-y: 40%;
     background-clip: text;
@@ -249,7 +251,9 @@ main{
 }
 .texto{
     background: var(--fondoGlass);
+    -webkit-backdrop-filter: var(--blurFondo);
     backdrop-filter: var(--blurFondo);
+    border-radius: 10px;
     padding: 2rem;
     width: 50%;
     max-width: 650px;
@@ -260,6 +264,10 @@ main{
     align-items: center;
 }
 
+.texto h1{
+    margin-bottom: 2rem;
+}
+
 .titulos{
     margin: 2rem auto;
     font-size: 3rem;
@@ -268,7 +276,7 @@ main{
     text-align: center;
 }
 .texto h3{
-    color: var(--colorAcento);
+    /* color: var(--colorAcento); */
     text-align: center;
     font-family: Goldman;
     font-weight: bold;
@@ -302,9 +310,9 @@ main{
 
 .contenedorConocimientos{
     /* border: 1px solid rgba(245, 245, 245, 0.1); */
-    background: var(--fondoGlass);
     width: 60%;
     max-width: 1300px;
+    background: var(--fondoGlass);
     -webkit-backdrop-filter: var(--blurFondo);
     backdrop-filter: var(--blurFondo);
     border-radius: 10px;

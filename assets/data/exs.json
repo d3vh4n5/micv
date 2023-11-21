@@ -70,6 +70,20 @@
         "download_url" : ""
     },
     {
+        "title" : "BanCode",
+        "description" : "This is a console app developed in java, as a final work of a java course I made.",
+        "img" : "./assets/img/bancode.png",
+        "type" : "Desktop app",
+        "technology" : "Java",
+        "status" : "developing",
+        "host" : "",
+        "hosted_in" : "",
+        "visit_url" : "",
+        "windowed" : false,
+        "code_url" : "not yet",
+        "download_url" : "not yet compiled"
+    },
+    {
         "title" : "CV Redirector",
         "description" : "Mini Web App de registros y redirección con estilo retro. Hace uso del método GET para obtener información y registrarla en la DB.",
         "img" : "./assets/img/scv.png",
