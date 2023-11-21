@@ -2,9 +2,9 @@
 body{
     color: var(--colorFuenteGeneral);
     background-color: var(--colorFondoAzulOscuro);
-    background-image: url(../img/rm373batch2-08.jpg);
+    /* background-image: url(../img/rm373batch2-08.jpg);
     background-size: cover;
-    background-position: 50%;
+    background-position: 50%; */
     height: 100vh;
     overflow: hidden;
     font-family: Roboto;
@@ -15,7 +15,7 @@ a{
 }
 a:hover{
     color: var(--colorAcento);
-    cursor: none;
+    cursor: pointer;
 }
 /*
 informacion de como hizo el chico el fondo de su portfolio:
@@ -29,6 +29,8 @@ informacion de como hizo el chico el fondo de su portfolio:
 /*=========== HEADER ============*/
 
 header{
+    transform: translatex(-50%);
+    left: 50%;
     position: fixed;
     background-color: var(--colorFondoMenu);
     -webkit-backdrop-filter: var(--blurFondo);
@@ -38,7 +40,8 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px 50px;
+    max-width: 1300px;
+    padding: 5px 0;
     z-index: 100;
 }
 h1{
@@ -56,7 +59,7 @@ h1{
 }
 
 h1:hover{
-    cursor:default;
+    cursor:dpointerlt;
 }
 nav{
     display: flex;
@@ -125,7 +128,7 @@ li{
     color: var(--colorAcento);
     border: 1px solid var(--colorAcento);
     background: var(--colorFondo);
-    cursor: none;
+    cursor: pointer;
     transition: 0.2s;
 }
 .contacto:hover .link{
@@ -141,7 +144,7 @@ li{
     width: fit-content;
     font-size: 30px;
     font-weight: bolder;
-    cursor: none;
+    cursor: pointer;
     display: none;
     transition: 0.4s;
 }
@@ -154,7 +157,7 @@ li{
 .mostrar-menu:hover,
 .esconder-menu:hover{
     color: var(--colorAcento);
-    cursor: none;
+    cursor: pointer;
 }
 #check{
     display:none;
@@ -189,9 +192,9 @@ section{
     align-items: center;
 }
 .uno{
-    background: linear-gradient(to bottom right,rgba(5, 13, 61, 0.1),black),url(../img/bg_dots_steam.png);
+    /* background: linear-gradient(to bottom right,rgba(5, 13, 61, 0.1),black),url(../img/bg_dots_steam.png);
     background-size: cover;
-    background-position: 100%;
+    background-position: 100%; */
     min-height: 100%;
 }
 .skills, .exs, .contact{
@@ -245,6 +248,8 @@ main{
     transform: scaleX(-1);
 }
 .texto{
+    background: var(--fondoGlass);
+    backdrop-filter: var(--blurFondo);
     padding: 2rem;
     width: 50%;
     max-width: 650px;
@@ -296,9 +301,10 @@ main{
 ==================*/
 
 .contenedorConocimientos{
-    border: 1px solid rgba(245, 245, 245, 0.1);
+    /* border: 1px solid rgba(245, 245, 245, 0.1); */
     background: var(--fondoGlass);
     width: 60%;
+    max-width: 1300px;
     -webkit-backdrop-filter: var(--blurFondo);
     backdrop-filter: var(--blurFondo);
     border-radius: 10px;
@@ -357,14 +363,14 @@ main{
     PROYECTOS
 ==================*/
 .projects, .faqs{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
         circle at 33% 10%,
         rgb(1, 25, 43) 5%,
-         var(--colorFondoAzulOscuro)60%);
-    background-size: cover;
+         var(--colorFondoAzulOscuro)60%); */
     display: flex;
     flex-direction: column;
-    min-height: 80%;
+    justify-content: space-around;
+    min-height: 70%;
 }
 .contenedorTarjetas{
     margin: 10px 0;
@@ -375,6 +381,7 @@ main{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 1300px;
     overflow: hidden;
 }
 
@@ -409,7 +416,7 @@ main{
     transition: all .5s;
 }
 summary:hover{
-    cursor: none;
+    cursor: pointer;
 }
 .descripcionTarjeta{
     position: absolute;
@@ -470,13 +477,13 @@ summary:hover{
     min-height: fit-content;
     height: 80%;
     padding: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
         circle at 33% 10%,
         rgb(1, 25, 43) 5%,
-         var(--colorFondoAzulOscuro)60%);
+         var(--colorFondoAzulOscuro)60%); */
 }
 .contact form{
-    border: 1px solid rgba(245, 245, 245, 0.1);
+    /* border: 1px solid rgba(245, 245, 245, 0.1); */
     background: var(--fondoGlass);
     -webkit-backdrop-filter: var(--blurFondo);
     backdrop-filter: var(--blurFondo);
@@ -507,23 +514,27 @@ legend{
 .contact input, textarea, label{
     padding: 10px 5px 0;
 }
+.contact input, textarea{
+    color-scheme: dark;
+    /* background-color: var(--colorFondo); */
+}
 .contact label{
     font-size: 1rem;
 }
 .contact button{
     color: var(--colorAcento);
     text-transform: uppercase;
-    /* background: linear-gradient(to right bottom,transparent, transparent 50%,var(--colorAcento)),url(../img/rm373batch2-08.jpg); */
-    background: url(../img/rm373batch2-08.jpg);
+    background-color: var(--colorFondo);
+    /* background: linear-gradient(to right bottom,transparent, transparent 50%,var(--colorAcento)),url(../img/rm373batch2-08.jpg);
     background-attachment: fixed;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     border: 1px solid var(--colorAcento);
     font-weight: 600;
 }
 .contact button:hover{
-    cursor: none;
+    cursor: pointer;
     background: var(--colorAcento);
     color: var(--colorFuenteGeneral);
     animation: pulso 10s 9999s;
@@ -540,8 +551,9 @@ legend{
 }
 /*=========FOOTER===========*/
 footer{
-    color: black;
-    background: #e7e7e7;
+    background: var(--fondoGlass);
+    backdrop-filter: var(--blurFondo);
+    -webkit-backdrop-filter: var(--blurFondo);
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -554,7 +566,7 @@ footer i{
     margin: 20px 0;
 }
 footer a{
-    color: rgb(44, 44, 44);
+    color: rgb(179, 176, 176);
     font-weight: 600;
 }
 
@@ -579,7 +591,3 @@ footer a{
     animation: appear .5s 1.5s forwards 1;
 }
 
-/* Clases estáticas */
-.fondo-grad{
-    background: var(--colorFondoMenu) !important;
-}

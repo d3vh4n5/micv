@@ -14,7 +14,7 @@ const FooterComponent = {
             </ul>
         </div>
         <small>
-            Designed and developed by Juan Angel Basgall (<a href="#inicio" class="linkFooter" alt="Sitio web del desarrollador">d3vh4n5</a>) Copyright © 2023 d3vh4n5 λ.
+            Developed by Juan Angel Basgall (<a href="#inicio" class="linkFooter" alt="Sitio web del desarrollador">d3vh4n5</a>) Copyright © 2023 d3vh4n5 λ.
         </small>
     </footer>
     `,

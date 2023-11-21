@@ -1,0 +1,33 @@
+.faqs{
+    background-color: black;
+}
+
+.faqs ul{
+    list-style: initial;
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 60%;
+}
+
+details{
+    margin: 20px 0;
+    padding: 10px 10px;
+    transition: all 1s;
+    color: var(--colorAcento);
+    border: 1px solid var(--colorAcento);
+    border-radius: 5px;
+
+    & p {
+        margin: 20px;
+    }
+}
+
+summary{
+    text-align: center;
+    transition: all 1s;
+    
+}

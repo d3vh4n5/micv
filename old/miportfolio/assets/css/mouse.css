@@ -1,0 +1,7 @@
+#cursor{
+    position: fixed;
+    pointer-events: none;
+    width: 32px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 32px;
+    z-index: 99999999999999999999999999999999999999999999;
+}

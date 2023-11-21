@@ -1,0 +1,11 @@
+/* Clases estáticas o abstractas  */
+
+/* Clases estáticas */
+.fondo-grad{
+    background: var(--colorFondoMenu) !important;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+}

@@ -1,0 +1,51 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxx animaciones xxxxxxxxxxxxxxxxxxxx*/
+
+
+@keyframes Spinner-animationDefault{
+    100% {
+        background-position: -1600px top;
+    }
+}
+
+@keyframes appear {
+    0%{
+        filter: blur(80px);
+    }
+    100%{
+        background: rgba(22, 22, 22, 0.9);
+        color: silver;
+        text-shadow: 0 0 1px var(--colorFuenteGeneral);
+        border: 2px solid rgb(37, 37, 37);
+    }
+    
+  }
+  @keyframes cambiarColor{
+      0%{
+          color: yellow;
+          text-shadow: 1px 1px 2px red;
+      }
+      
+      100%{
+          color: var(--colorAcento);
+          text-shadow: 1px 1px 2px white;
+      }
+  }
+  @keyframes pulso {
+      0%{
+          transform: scale(1.01);
+      }
+      
+      5%{
+          transform: scale(1);
+          box-shadow: 0px 0px 5px 3px rgba(173, 216, 230, 0.74)inset,
+                   0px 0px 5px 3px rgba(173, 216, 230, 0.74);
+      }
+      60%{
+          box-shadow: 0px 0px 5px 50px rgba(173, 216, 230, 0.0)inset,
+                   0px 0px 5px 50px rgba(173, 216, 230, 0.0);
+      }
+      99.99%{
+          box-shadow: 0px 0px 5px 50px rgba(173, 216, 230, 0.0)inset,
+                   0px 0px 5px 50px rgba(173, 216, 230, 0.0);
+      }
+  }

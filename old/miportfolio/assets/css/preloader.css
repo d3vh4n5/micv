@@ -1,0 +1,36 @@
+#preloader{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    display: grid;
+    place-items: center;
+    /* transition: opacity 1s, visibility 1s; */
+}
+
+#preloader img{
+    width: 50px;
+}
+
+.spinner{
+    background-color: red;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background: url('../img/Spinner-bnet.png') 0 0;
+    animation: Spinner-animationDefault .7s steps(20) infinite;
+}
+
+.fade-out{
+    /* opacity: 0;
+    visibility: hidden; */
+    animation: fade-out 1s ease forwards;
+}
+
+@keyframes fade-out{
+    100%{
+        filter: opacity(0);
+        display: none !important;
+    }
+}

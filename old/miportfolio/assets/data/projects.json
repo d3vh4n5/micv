@@ -1,0 +1,73 @@
+[
+    {
+        "title" : "Mercado Lan",
+        "description" : "e-commerce de prueba desarrollado en php",
+        "img" : "./assets/img/mercadolan.png",
+        "type" : "web site",
+        "technology" : "php",
+        "status" : "finished",
+        "host" : "Temporal",
+        "hosted_in" : "https://ar.000webhost.com/",
+        "visit_url" : "https://mercadolan.000webhostapp.com/backend/acerca_de.php",
+        "windowed" : false,
+        "code_url" : "https://github.com/d3vh4n5/mercadolan",
+        "download_url" : ""
+    },
+    {
+        "title" : "Tools tracker",
+        "description" : "Sistema de gestión de herramientas y ordenes de trabajo para una empresa",
+        "img" : "./assets/img/tt.png",
+        "type" : "web site",
+        "technology" : "php",
+        "status" : "finished",
+        "host" : "Temporal",
+        "hosted_in" : "https://ar.000webhost.com/",
+        "visit_url" : "https://pruebatestapp.000webhostapp.com/",
+        "windowed" : false,
+        "code_url" : "",
+        "download_url" : ""
+    },
+    {
+        "title" : "Node API REST",
+        "description" : "This is an API developed with my Team as an extracurricular project of the subject 'Web Integrations' of our career as 'programming technique' Teclab.",
+        "img" : "./assets/img/api.png",
+        "type" : "web site",
+        "technology" : "Node",
+        "status" : "developing",
+        "host" : "Temporal",
+        "hosted_in" : "https://www.back4app.com/",
+        "visit_url" : "https://app-juanangelbasgall.b4a.run/",
+        "windowed" : false,
+        "code_url" : "https://github.com/d3vh4n5/APIGrupalTeclab",
+        "download_url" : ""
+    },
+    {
+        "title" : "Arbeit",
+        "description" : "UX-UI Design of a mobile app.",
+        "img" : "./assets/img/arbeit.png",
+        "type" : "web site",
+        "technology" : "",
+        "status" : "finished",
+        "host" : "Temporal",
+        "hosted_in" : "https://vercel.com/",
+        "visit_url" : "https://docs.google.com/presentation/d/1yJOVOVuk7DqGwf_TYTkZ6eLnpiCaj5EiInxlXGp2PBk/edit?usp=share_link",
+        "windowed" : false,
+        "code_url" : "",
+        "download_url" : ""
+    },
+    {
+        "title" : "Tkinter CRUD",
+        "description" : "CRUD desktop app developed in Python. It only works in Windows.",
+        "img" : "./assets/img/crudcacpython.png",
+        "type" : "Desktop app",
+        "technology" : "Python",
+        "status" : "finished",
+        "host" : "",
+        "hosted_in" : "https://ar.000webhost.com/",
+        "visit_url" : "",
+        "windowed" : false,
+        "code_url" : "https://github.com/d3vh4n5/CRUDCaCPython",
+        "download_url" : "./assets/files/crud.zip"
+    }
+    
+]

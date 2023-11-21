@@ -6,7 +6,7 @@
 }
 :root{
     font-size: 16px;
-    --colorFondoMenu: rgba(24, 24, 24, 0.76);
+    --colorFondoMenu: rgba(24, 24, 24, 0);
     --colorFondoMenuSolido: rgba(34, 34, 34);
     --colorFondoAzulOscuro: rgb(1,4,9);
     --colorFuenteGeneral: #FBFFF1;

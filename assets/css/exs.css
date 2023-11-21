@@ -18,8 +18,8 @@
 }
 
 .carta:hover{
-    cursor: url('wc-mouse-sword.png'), auto;
-    cursor: none;
+    /* cursor: url('wc-mouse-sword.png'), auto;
+    cursor: pointer; */
 }
 
 .carta:hover > .front, .carta:hover > .back {
@@ -50,6 +50,8 @@
 
 .front {
     background-color: #3498db5d; /* Color del frente */
+    background: var(--fondoGlass);
+    backdrop-filter: var(--blurFondo);
     display: flex;
     flex-direction: column;
 }
@@ -104,7 +106,8 @@
 
 .back {
     padding: 20px 10px;
-    background-color: teal;
+    background: var(--fondoGlass);
+    backdrop-filter: var(--blurFondo);
     color: whitesmoke;
     transform: rotateY(180deg);
     /* text-align: center; */
@@ -128,7 +131,7 @@
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(turquoise,transparent 70%);
+    background: radial-gradient(teal,transparent 70%);
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: width .2s ease, height .2s ease, opacity .2s;

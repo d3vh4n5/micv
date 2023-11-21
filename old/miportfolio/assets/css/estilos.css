@@ -1,0 +1,585 @@
+
+body{
+    color: var(--colorFuenteGeneral);
+    background-color: var(--colorFondoAzulOscuro);
+    background-image: url(../img/rm373batch2-08.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Roboto;
+}
+a{
+    color: var(--colorFuenteGeneral);
+    font-weight: 600;
+}
+a:hover{
+    color: var(--colorAcento);
+    cursor: none;
+}
+/*
+informacion de como hizo el chico el fondo de su portfolio:
+.contenedor-skills3 {
+    background: linear-gradient(#02be98,hsla(0,3%,73%,.8)),url(../img/rm373batch2-08.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+/*=========== HEADER ============*/
+
+header{
+    position: fixed;
+    background-color: var(--colorFondoMenu);
+    -webkit-backdrop-filter: var(--blurFondo);
+    backdrop-filter: var(--blurFondo);
+    color: var(--colorFondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 50px;
+    z-index: 100;
+}
+h1{
+    opacity: .8;
+    color: rgba(153, 205, 50, 0.3);
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    font-family: Goldman;
+    background-image: url(../img/hacker.gif);
+    background-position-y: 40%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+h1:hover{
+    cursor:default;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    all: unset;
+    margin: 5px 20px;
+    min-width: fit-content;
+}
+.optionMenu{
+    all: unset;
+    text-transform: uppercase;
+}
+/* Clase para la lógica de la sección seleccionada */
+.active{
+    font-weight: bolder;
+    color: var(--colorAcento);
+    text-decoration: underline;
+}
+.contacto{
+    color: blueviolet;
+    opacity: .8;
+    height: 7%;
+    width: 80%;
+    border-radius: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--colorGradBoton);
+    overflow: hidden;
+    padding: 2px;
+}
+.link{
+    padding: 0 20px;
+    font-weight: 900;
+    background-image: var(--colorGradBoton);
+    /* alternativa por si no funciona en algun navegador */
+    background-color: white;
+    /*acomododo el fondo al texto, bwekit y mox son para compatibilidades*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+    color: transparent;
+    /* Por si no funciona el color transparent, agrego compatibilidades:*/
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+.contenedorLink{
+    background-image: url("../img/giphy4.gif");
+    opacity: .9;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+.contacto:hover{
+    color: var(--colorAcento);
+    border: 1px solid var(--colorAcento);
+    background: var(--colorFondo);
+    cursor: none;
+    transition: 0.2s;
+}
+.contacto:hover .link{
+    background-image: linear-gradient(var(--colorAcento), var(--colorAcento));
+}
+.contacto:hover .contenedorLink{
+    background-image: var(--colorFondoMenu);
+}
+
+.mostrar-menu,
+.esconder-menu{
+    margin: 0;
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: none;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order:1;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: var(--colorAcento);
+    cursor: none;
+}
+#check{
+    display:none;
+}
+.darkScreen{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: var(--blurFondo);
+    backdrop-filter: var(--blurFondo);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+/*======================================*/
+main{
+    overflow-y: scroll;
+    height: 100%;
+}
+main::-webkit-scrollbar{
+    width: .5rem;
+    background-color: rgba(0, 0, 0, 1);
+}
+main::-webkit-scrollbar-thumb{
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uno{
+    background: linear-gradient(to bottom right,rgba(5, 13, 61, 0.1),black),url(../img/bg_dots_steam.png);
+    background-size: cover;
+    background-position: 100%;
+    min-height: 100%;
+}
+.skills, .exs, .contact{
+    height: fit-content;
+    padding: 50px;
+}
+/*  =============
+    Parallax  
+    =============
+*/
+main{
+    perspective: 10px;
+    overflow-x: hidden;
+}
+.skills{
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.earth{
+    position: absolute;
+    transform: translateZ(-25px);
+    overflow: hidden;
+    width: 200rem;
+    right: -180%;
+}
+.moon{
+    position: absolute;
+    transform: translateZ(-10px) scale(.8);
+    left: -15%;
+    overflow: hidden;
+}
+
+/*  =============
+    END Parallax  
+    =============
+*/
+
+.yo, .texto{
+    margin: 3rem;
+}
+.yo{
+    width: 30rem;
+    object-fit: cover;
+    border-radius: 67rem;
+    /* filter: grayscale(.1) brightness(.9) contrast(.9); */
+    filter: drop-shadow(-30px 30px 20px rgba(0, 0, 0, 0.9));
+    box-shadow: -5px 30px 15px 3px rgba(0, 0, 0, 0.37);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transform: scaleX(-1);
+}
+.texto{
+    padding: 2rem;
+    width: 50%;
+    max-width: 650px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos{
+    margin: 2rem auto;
+    font-size: 3rem;
+    color: var(--colorFuenteGeneral);
+    font-family: play;
+    text-align: center;
+}
+.texto h3{
+    color: var(--colorAcento);
+    text-align: center;
+    font-family: Goldman;
+    font-weight: bold;
+}
+.texto p{
+    color: var(--colorFuenteGeneral);
+    font-size: 1.05rem;
+    font-family: Goldman;
+    text-align: center;
+}
+.btnCV{
+    text-decoration: none;
+    color: var(--colorAcento);
+    font-family: play;
+    padding: 10px 30px;
+    margin: 40px 0;
+    border: 1px solid var(--colorAcento);
+    border-radius: 50px;
+}
+.btnCV:hover{
+    animation: none;
+    color: var(--colorFuenteGeneral);
+    background-color: var(--colorAcento);
+    text-shadow: 0px 0px 3px green;
+    box-shadow: 0 0 20px 10px rgba(153, 205, 50, 0.6),
+    0 0 20px 10px rgba(153, 205, 50, 0.6) inset;
+}
+/*=================
+    CONOCIMIENTOS
+==================*/
+
+.contenedorConocimientos{
+    border: 1px solid rgba(245, 245, 245, 0.1);
+    background: var(--fondoGlass);
+    width: 60%;
+    -webkit-backdrop-filter: var(--blurFondo);
+    backdrop-filter: var(--blurFondo);
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contenedorConocimientos p{
+    margin-bottom: 2rem;
+}
+
+.contenedorBio{
+    display: flex;
+    gap: 20px;
+}
+
+.contenedorBio img{
+    width: 5rem;
+    flex: 2;
+}
+
+.contenedorBioTextos{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 9;
+    font-size: 1.2rem;
+}
+
+.skills ul{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills li{
+    /* margin: 1rem;
+    display: flex;
+    flex-direction: column; */
+    animation: cambiarColor 3s ease alternate-reverse infinite;
+}
+
+/* .skills i{
+    margin: 2rem;
+} */
+
+/*=================
+    PROYECTOS
+==================*/
+.projects, .faqs{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
+        circle at 33% 10%,
+        rgb(1, 25, 43) 5%,
+         var(--colorFondoAzulOscuro)60%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+}
+.contenedorTarjetas{
+    margin: 10px 0;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tarjeta{
+    all: unset;
+    position: relative;
+    filter: opacity(.4) blur(1.5px);
+    margin: 10px;
+    width: var(--anchoTarjeta);
+    height: calc(var(--anchoTarjeta)/1.8);
+
+    border-inline-start: 2px solid;
+    border-block-start: 2px solid;
+    /* border: 2px solid ; */
+    padding: 5px;
+    /* border-image-source: linear-gradient(45deg, red, blue); */
+    /* border-image-slice: 1 fill; */
+    border-image-slice: 1;
+
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .5s;
+}
+.imgTarjeta{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: all .5s;
+}
+summary:hover{
+    cursor: none;
+}
+.descripcionTarjeta{
+    position: absolute;
+    padding: 15px;
+    bottom: -290px;
+    background: linear-gradient(to right bottom,rgba(0, 0, 0, 0.6) 50%,transparent);
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-backdrop-filter: var(--blurFondo);
+    backdrop-filter: var(--blurFondo);
+    color: var(--colorFuenteGeneral);
+    transition: .5s;
+    width: 100%;
+}
+.descripcionTarjeta h4{
+    color: var(--colorAcento);
+}
+.status{
+    background-color: rgba(10, 10, 10, 0.6);
+    padding: .5rem;
+    color: green;
+    text-shadow: 1px 1px 1px rgba(0, 128, 0, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.content{
+    color: lightgray;
+    text-shadow: 1px 1px 1px rgba(211, 211, 211, 0.5);
+}
+.green{
+    color: yellowgreen;
+    text-shadow: 1px 1px 1px rgba(153, 205, 50, 0.5);
+}
+.orange{
+    color: orange;
+    text-shadow: 1px 1px 1px rgba(255, 166, 0, 0.5);
+}
+.red{
+    color: red;
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.5);
+}
+.tarjeta:hover{
+    filter: opacity(1);
+}
+.tarjeta:hover > .descripcionTarjeta{
+    bottom: 0px;
+}
+.tarjeta:hover > .imgTarjeta{
+    filter: grayscale(0);
+}
+
+/*============CONTACTO===================*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    height: 80%;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
+        circle at 33% 10%,
+        rgb(1, 25, 43) 5%,
+         var(--colorFondoAzulOscuro)60%);
+}
+.contact form{
+    border: 1px solid rgba(245, 245, 245, 0.1);
+    background: var(--fondoGlass);
+    -webkit-backdrop-filter: var(--blurFondo);
+    backdrop-filter: var(--blurFondo);
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--colorFuenteGeneral);
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+}
+legend{
+    text-align: center;
+}
+.contact > form input, textarea, button, label{
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 500px;
+}
+.contact > form input, textarea, button{
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+}
+.contact > form input, button{
+    height: 2.5rem;
+}
+.contact input, textarea, label{
+    padding: 10px 5px 0;
+}
+.contact label{
+    font-size: 1rem;
+}
+.contact button{
+    color: var(--colorAcento);
+    text-transform: uppercase;
+    /* background: linear-gradient(to right bottom,transparent, transparent 50%,var(--colorAcento)),url(../img/rm373batch2-08.jpg); */
+    background: url(../img/rm373batch2-08.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--colorAcento);
+    font-weight: 600;
+}
+.contact button:hover{
+    cursor: none;
+    background: var(--colorAcento);
+    color: var(--colorFuenteGeneral);
+    animation: pulso 10s 9999s;
+}
+.contact button p{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.contact button:hover > p{
+    animation: none;
+}
+/*=========FOOTER===========*/
+footer{
+    color: black;
+    background: #e7e7e7;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+footer i{
+    font-size: 30px;
+    margin: 20px 0;
+}
+footer a{
+    color: rgb(44, 44, 44);
+    font-weight: 600;
+}
+
+/*xxxxxxxxxxxxxxx after y EFECTOS HOVER xxxxxxxxxxxxxxxxxx*/
+.btn::after, .linkFooter:after{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 4px;
+    font-size: .8rem;
+    color: transparent;
+    user-select: none;
+    content: attr(alt);
+    white-space: nowrap;
+    border-radius: 6px;
+    text-shadow: none;
+    text-transform: none;
+    position: absolute;
+    right: 0px;
+    top: -2.5rem;
+}
+
+.btn:hover:after, .linkFooter:hover::after{
+    animation: appear .5s 1.5s forwards 1;
+}
+
+/* Clases estáticas */
+.fondo-grad{
+    background: var(--colorFondoMenu) !important;
+}

@@ -1,0 +1,149 @@
+
+.card-container{
+    perspective: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.carta {
+    width: 13rem;
+    height: 20rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.carta:hover{
+    cursor: url('wc-mouse-sword.png'), auto;
+    cursor: none;
+}
+
+.carta:hover > .front, .carta:hover > .back {
+    box-shadow: 0px 0px 10px 1px turquoise;
+}
+.carta:hover > .front{
+    transform: rotateY(180deg);
+}
+.carta:hover > .back {
+    transform: rotateY(360deg);
+}
+
+.front,
+.back {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 22px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform .7s ease;
+    overflow: hidden;
+}
+
+.front {
+    background-color: #3498db5d; /* Color del frente */
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    height: 40%;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: 50% !important;
+    filter: opacity(.7);
+}
+
+.front p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.tech-container{
+    position: absolute;
+    height: 30%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    opacity: .4;
+}
+
+.tech-logo{
+    user-select: none;
+    position: absolute;
+    width: 90px;
+    left: -5%;
+}
+.php{
+    background: rgb(79, 66, 194, .5);
+}
+.python{
+    background: linear-gradient(to right bottom, rgba(28, 54, 139, .5), rgba(192, 176, 28, .5));
+}
+.node{
+    background: linear-gradient(to right, rgba(192, 176, 28, .05),RGBa(104, 160, 99, .5), RGBa(60, 135, 58, .5));
+}
+.ux-ui{
+    background: rgba(48, 48, 48, .5);
+}
+
+
+/* ========================================================*/
+
+.back {
+    padding: 20px 10px;
+    background-color: teal;
+    color: whitesmoke;
+    transform: rotateY(180deg);
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.back p{
+    pointer-events: none;
+    user-select: none;
+}
+
+.back::before{
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(turquoise,transparent 70%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: width .2s ease, height .2s ease, opacity .2s;
+    transition: all .2s ease;
+}
+
+.back:hover::before{
+    --size: 150px;
+    opacity: .4;
+    z-index: -1;
+}
+
+
+@media (max-width: 700px){
+    .exs{
+        padding: 10px 0;
+    }
+}

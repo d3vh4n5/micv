@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: #e7e7e7;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        li{
+            all: unset;
+            border: 1px solid green;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: lightgreen;
+            text-align: center;
+            margin: 10px 0;
+        }
+        h1{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contenedor{
+            border: 1px solid red;
+            background: lightcoral;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px;
+            color: black;
+        }
+        .contenedorDolar{
+            border: 1px solid green;
+            background: lightgreen;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px;
+            color: black;
+        }
+        .respuesta, .respuesta2{
+            background-color: rgb(240, 222, 222);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button{
+            margin: 0 auto;
+        }
+        .tst{
+            color: rgb(2, 51, 2);
+        }
+        .buscando::after{
+            content: '';
+            animation: look 2s ease infinite;
+        }
+        @keyframes look {
+            0%{
+                content: '';
+            }
+            25%{
+                content: '.';
+            }
+            50%{
+                content: '..';
+            }
+            75%{
+                content: '...';
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Listando los objetos de la api</h1>
+    <!--<ul id="lista-objetos"></ul> -->
+    <div id="lista-objetos"></div>
+    
+    <div class="contenedor" id="contenedor">
+        <h3>Activacion de api con boton y prueba de texto pre-load con reemplazo total del contenido</h3>
+        <p class="respuesta" id="respuesta"></p>
+        <button onclick="obtenerChiste()">Obtener chiste</button>
+    </div>
+    <div class="contenedor" id="contenedor">
+        <h3>Activacion de api con boton y prueba de texto pre-load</h3>
+        <p class="respuesta" id="respuesta2"></p>
+        <button onclick="obtenerChiste2()">Obtener chiste</button>
+    </div>
+    <div class="contenedorDolar" id="contenedorDolar">
+        <h1>Consulte el valor del Dólar</h1>
+        <p class="valor" id="valor"></p>
+        <button onclick="obtenerValor()">Obtener Valor</button>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        // let lista = document.getElementById('lista-objetos')
+        // lista.innerHTML = "<p class='buscando'>Buscando</p>"
+        // fetch('https://mercadolan.000webhostapp.com/API/app.php?opcion=1')
+        // .then(response => response.json()) // Convertir la respuesta a JSON
+        // .then(data => {
+        //     //console.log(data);
+        //     lista.innerHTML = ''
+        //     for (let objeto of data){
+        //         const li = document.createElement('li');
+        //         li.className += 'tst'
+        //         li.textContent = 'Nombre: ' + objeto.nombre + ' Edad: ' + objeto.edad + ' Años ' + ' Es humano: ' + objeto.humano;
+        //         lista.appendChild(li);
+        //     }
+        // })
+        let lista = document.getElementById('lista-objetos')
+        lista.innerHTML = "<p class='buscando'>Buscando</p>"
+        fetch('https://mercadolan.000webhostapp.com/API/app.php?opcion=1')
+        .then(response => response.json()) // Convertir la respuesta a JSON
+        .then(data => {
+            //console.log(data);
+            lista.innerHTML = ''
+            for (let objeto of data){
+                const li = document.createElement('p');
+                li.className += 'contenedorDolar'
+                li.textContent = `Nombre: ${objeto.nombre} | Edad:  ${objeto.edad} Años | Es humano: ${objeto.humano}`;
+                lista.appendChild(li);
+            }
+        })
+
+
+        function obtenerChiste(){
+            //estas dos lineas tienen que ir antes del fetch
+            let respuesta = document.getElementById("contenedor")// Si tomo el contenedor de un efecto en el que borra todo el contenido, se convierte en el buscador, y luego en la respuesta
+            //let respuesta = document.getElementById("respuesta")// Sino puedo tomar solo el elemento
+            respuesta.innerHTML = "<p class='buscando'>Buscando Información</p>" //Imprimimos esto como pre-load para entender que se activó y estámos esperando la respuesta
+            
+            fetch('https://api.chucknorris.io/jokes/random')
+                .then((response) => response.json())
+                .then((data) => {
+        
+                    respuesta.innerHTML = (`<p class='respuesta'>La respuesta de la api fue: 
+                        <br><br> 
+                        ${data.value}
+                    </p>`);
+                })
+        }
+        function obtenerChiste2(){
+            let respuesta = document.getElementById("respuesta2")
+            respuesta.innerHTML = "<p class='buscando'>Buscando Información</p>" 
+            
+            fetch('https://api.chucknorris.io/jokes/random')
+                .then((response) => response.json())
+                .then((data) => {
+        
+                    respuesta.innerHTML = (`La respuesta de la api fue: 
+                    <br><br> 
+                    ${data.value}`);
+                })
+        }
+
+        function obtenerValor(){
+            let respuesta = document.getElementById("contenedorDolar")
+            respuesta.innerHTML = "<p class='buscando'>Buscando Información</p>"
+            
+            fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    respuesta.innerHTML = (`Precios del dólar: 
+                    <br>
+                    <br> <u>${data[0].casa.nombre}</u>
+                    <br> Compra: ${data[0].casa.compra}
+                    <br> Venta:  <b>${data[0].casa.venta}</b>
+                    <br>
+                    <br> <u>${data[1].casa.nombre}</u>
+                    <br> Compra: ${data[1].casa.compra}
+                    <br> Venta:  <b>${data[1].casa.venta}</b>
+                    
+                    `);
+                })
+        }
+
+    </script>
+</body>
+</html>

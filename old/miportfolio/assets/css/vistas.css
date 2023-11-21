@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 16px;
+    --colorFondoMenu: rgba(24, 24, 24, 0.76);
+    --colorFondoMenuSolido: rgba(34, 34, 34);
+    --colorFuenteGeneral: #FBFFF1;
+    --colorAcento: rgb(255, 99, 71);
+    --colorFuente: rgb(27, 72, 197);
+    --colorFuente2: rgb(79, 79, 231);
+    --fondoGlass: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(214, 214, 214, 0.2));
+    --blurFondo: blur(10px);
+    --colorGradBoton: linear-gradient(45deg, var(--colorAcento), var(--colorFuente));
+    --anchoTarjeta: 400px;
+}
+body{
+    width: 100vw;
+    background-image: none;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+.header{
+    position: fixed;
+    background-color: var(--colorFondoMenu);
+    -webkit-backdrop-filter: var(--blurFondo);
+    backdrop-filter: var(--blurFondo);
+    color: var(--colorFondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 50px;
+    z-index: 100;
+}
+main{
+    padding: 50px;
+    border: 2px solid; /* Al no aclararle el color toma el de la fuente, entonces funciona conjunto con el darkmode */
+}
+.dark-mode {
+    background-color: rgb(22, 22, 22);
+    color: rgb(248, 250, 126);
+}
+
+.dark-mode-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+.dark-mode-switch .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.dark-mode-switch .switch {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    border-radius: 34px;
+    transition: background-color 0.5s;
+}
+
+.dark-mode-switch .switch::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    background-color: white;
+    transition: transform 0.5s;
+}
+
+.dark-mode-switch .checkbox:checked + .switch::before {
+    transform: translateX(26px);
+}
+
+.dark-mode-switch .switch:hover {
+    background-color: lightgray;
+}
+
+.dark-mode-switch .checkbox:checked + .switch {
+    background-color: #2196F3;
+}

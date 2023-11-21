@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="dark-mode-switch">
+        <input type="checkbox" id="dark-mode-toggle" class="checkbox">
+        <label for="dark-mode-toggle" class="switch"></label>
+      </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos minima obcaecati laboriosam?</p>
+      <!-- <iframe style="position: absolute; resize: both;" src="https://mercadolan.000webhostapp.com/backend/acerca_de.php" width="500px" height="300px" frameborder="1"></iframe> -->
+      <h2>
+        Color scheme:
+        <br>
+        <a href="https://www.youtube.com/shorts/3EMH9X1OO5s">https://www.youtube.com/shorts/3EMH9X1OO5s</a>
+      </h2>
+      <pre>
+        :root{
+          color-scheme: light dark;
+        }
+      </pre>
+      <div class="card">
+        <div class="img"></div>
+        <div class="card-texto">
+          <h2>titulo card</h2>
+          texto card, precio anterior: <del>$1544</del>
+        </div>
+      </div>
+
+      <details>
+        <summary>Titulo</summary>
+        <p>Contenido</p>
+      </details>
+      <details>
+        <summary>Titulo</summary>
+        <p>Contenido</p>
+      </details>
+      <details>
+        <summary>Titulo</summary>
+        <p>Contenido</p>
+      </details>
+
+      <h1>Description tags:</h1>
+      <dl>
+        <dt>Cosa</dt>
+        <dd>
+          Una <dfn>cosa</dfn> es algo en argentino que puede tomar muchas formas
+        </dd>
+        <dt>Cosita</dt>
+        <dd>
+          Es como lo anterior, pero más pequeño
+        </dd>
+        <dt>Etiquetas de descripcion</dt>
+        <dd>
+          Son estas etiquetas que permiten describir cosas y dar estos estilos 
+          predeterminados, tenemos la etiqueta description list (dl), la description 
+          title (dt) y la de definition description (dd).
+        </dd>
+      </dl>
+
+
+<script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle.addEventListener('change', function() {
+  document.body.classList.toggle('dark-mode');
+});
+</script>
+</body>
+</html>
