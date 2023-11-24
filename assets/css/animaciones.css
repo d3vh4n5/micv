@@ -21,9 +21,14 @@
   }
   @keyframes cambiarColor{
       0%{
-          color: yellow;
-          text-shadow: 1px 1px 2px red;
-      }
+          color: white;
+          text-shadow: 1px 1px 2px var(--colorFuente);
+        }
+        
+    /* 50%{
+        color: var(--colorFuente);
+        text-shadow: 1px 1px 2px var(--colorAcento);
+      } */
       
       100%{
           color: var(--colorAcento);
