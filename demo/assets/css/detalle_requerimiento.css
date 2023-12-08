@@ -1,0 +1,38 @@
+/* .estado{
+    width: fit-content;
+    padding: 10px 30px;
+    border: 1px solid orange;
+} */
+
+#conversacion{
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding-right: 10px;
+}
+
+#conversacion::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+#conversacion::-webkit-scrollbar-thumb{
+    background-color: #23A6F0;
+    border-radius: 3px;
+}
+
+.user, .user-wmnt{
+    width: 53px;
+    min-width: 53px;
+    height: 53px;
+    min-height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px){
+    #conversacion::-webkit-scrollbar{
+        width: 3px;
+    }
+}

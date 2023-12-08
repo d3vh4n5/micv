@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <link rel="shortcut icon" href="../assets/img/icon-wmnt.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d90748bc75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <script type="module" src="../assets/js/header.js"></script>
+
+    <!-- Quizás dinámico  -->
+    <link rel="stylesheet" href="../assets/css/detalle_requerimiento.css">
+    <title>Requerimientos clientes</title>
+</head>
+
+<body>
+  <header>
+    
+    <nav class="nav fixed-top p-3">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <i class="fa-sharp fa-solid fa-bars fs-1 text-secondary"></i>
+        </button>
+        <button class="btn ms-auto" title="Cerrar sesión" onclick="document.location.href='./login.html'">
+            <i class="fa-solid fa-arrow-right-from-bracket fs-1 text-danger"></i>
+        </button>
+    </nav>
+
+    <!-- Sidebar -->
+      
+
+    <div class="offcanvas offcanvas-start show border-0 shadow-lg" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+            <button type="button" class="btn p-2 btn-cerrar" data-bs-dismiss="offcanvas">
+              <i class="fa-sharp fa-solid fa-bars fs-1 text-secondary"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body d-flex align-items-center justify-content-center overflow-hidden">
+            <!-- Contenido off canvas -->
+            <div class="row">
+                <div class="col sidenav-content">
+                    <img src="../assets/img/wmnt-degrade-c.png" class="logo mb-5" alt="Wamnet logo">
+    
+                    <h2 class="">Bienvenido, @nombre</h2>
+                    <h4 class="fw-normal ">¿Con qué podemos ayudarlo hoy?</h4>
+                    
+                    <nav class="sidenav-options">
+                      <ul>
+                        <li>
+                          <a href="./nuevo_requerimiento.html" class="fs-4 text-primary m-1 text-decoration-none">Nuevo Requerimiento</a>
+                        </li>
+                        <li>
+                          <a href="./historial.html" class="fs-4 text-primary m-1 text-decoration-none">Historial de requerimientos</a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Fin Contenido off canvas -->
+        </div>
+    </div>
+  </header>
+
+  <main class="container-fluid h-100">
+  <!-- <main class="container-fluid contenedor-principal"> -->
+      <div class="container-fluid">
+
+
+<!-- Contenido Belen -->
+
+
+<h2>$titulo-req - $proyecto</h2>
+<div class="row">
+    <div class="col-lg-6">
+        <div id="conversacion" class="conversacion">
+
+            <!-- Mensajes -->
+            
+
+            <div class="row cliente mb-4"> <!-- cliente -->
+                <div class="col-10">
+                    <div class="mensaje bg-light text-secondary p-3 rounded border">
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                    <div class="user rounded-circle border border-4 border-primary fs-3 fw-bolder text-primary">
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="row wmnt mb-4"> <!-- respuesta -->
+                <div class="col-2 d-flex align-items-center">
+                    <div class="user-wmnt bg-wmnt rounded-circle">
+                        <img src="../assets/img/mini-darkmode1.png">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="mensaje bg-light text-secondary p-3 rounded border">
+                        $response 
+                        $response 
+                        $response 
+                        $response 
+                        $response 
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cliente mb-4"> <!-- cliente -->
+                <div class="col-10">
+                    <div class="mensaje bg-light text-secondary p-3 rounded border">
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                    <div class="user rounded-circle border border-4 border-primary fs-3 fw-bolder text-primary">
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cliente mb-4"> <!-- cliente -->
+                <div class="col-10">
+                    <div class="mensaje bg-light text-secondary p-3 rounded border">
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                        $descripcion-requerimiento
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                    <div class="user rounded-circle border border-4 border-primary fs-3 fw-bolder text-primary">
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="row wmnt mb-4"> <!-- respuesta -->
+                <div class="col-2 d-flex align-items-center">
+                    <div class="user-wmnt bg-wmnt rounded-circle">
+                        <img src="../assets/img/mini-darkmode1.png">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="mensaje bg-light text-secondary p-3 rounded border">
+                        $response 
+                        $response 
+                        $response 
+                        $response 
+                        $response 
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIN Mensajes -->
+
+        </div>
+        <hr>
+        <div id="chat">
+            <form>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="mensaje">
+                            <textarea name="" id="mensaje_nuevo" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-2 d-flex align-items-center justify-content-end">
+                        <div class="user rounded-circle border border-4 border-primary fs-3 fw-bolder text-primary">
+                            $
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary mt-3 mb-3" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+<!-- segunda columna-->
+    <div class="col-lg-6">
+        <div id="estado">
+            <h5 class="text-secondary">Estado</h5>
+            <div class="estado bg-warning-subtle text-warning p-3 border border-warning d-inline-block">
+                $estado
+            </div>
+            <div class="estado bg-danger-subtle text-danger p-3 border border-danger d-inline-block">
+                $estado
+            </div>
+            <div class="estado bg-success-subtle text-success p-3 border border-success d-inline-block">
+                $estado
+            </div>
+        </div>
+        <div id="archivos">
+            <!-- <h5 class="text-secondary">Archivos adjuntos</h5> -->
+            <table class="table table-striped border caption-top">
+                <caption class="fs-4">Archivos adjuntos</caption>
+                <thead>
+                    <tr>
+                        <th class="border">#</th>
+                        <th class="border">Archivo</th>
+                        <th class="border">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border">$numero-orden</td>
+                        <td class="border">$nombre-archivo-extension</td>
+                        <td class="border">
+                            <a href="#">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="agregar_archivos">
+                <form action="post">
+                    <label for="upload" class="mb-3 fs-5 text-secondary">Adjunte la documentación que considere pertinente</label>
+                    <div class="input-group ">
+                        <input type="file" class="form-control" id="upload" aria-describedby="upload" aria-label="Seleccionar archivo">
+                        <button class="btn btn-outline-primary" type="button" id="uplaod">Cargar</button>
+                    </div>
+                    <div class="form-text mb-3">.doc, .docx, .pdf, .mp4, .jpg, .png</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-5 mb-5">
+        <!-- <button type="button" class="btn btn-outline-primary">Volver</button> -->
+        <a href="./historial.html" class="btn btn-outline-primary">Volver</a>
+        
+    </div>
+</div>
+<!-- FIN Contenido Belen -->
+
+
+
+
+</div>
+</main>
+
+<footer>
+  <!-- place footer here -->
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script>
+    
+    window.addEventListener("load", ()=>{
+        const conversacion = document.querySelector('#conversacion')
+        conversacion.scrollTop = conversacion.scrollHeight;
+    })
+</script>
+</body>
+
+</html>

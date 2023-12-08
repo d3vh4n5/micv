@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Requerimientos clientes</title>
+  <!-- Required meta tags -->
+  <link rel="shortcut icon" href="../assets/img/icon-wmnt.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d90748bc75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/historial_requerimientos.css">
+    <script type="module" src="../assets/js/header.js"></script>
+</head>
+
+<body>
+  <header>
+    
+    <nav class="nav fixed-top p-3 bg-white mb-3">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <i class="fa-sharp fa-solid fa-bars fs-1 text-secondary"></i>
+        </button>
+        <button class="btn ms-auto" title="Cerrar sesión" onclick="document.location.href='./login.html'">
+          <i class="fa-solid fa-arrow-right-from-bracket fs-1 text-danger"></i>
+      </button>
+    </nav>
+
+    <!-- Sidebar -->
+      
+
+    <div class="offcanvas offcanvas-start show border-0 shadow-lg" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+            <button type="button" class="btn p-2 btn-cerrar" data-bs-dismiss="offcanvas">
+              <i class="fa-sharp fa-solid fa-bars fs-1 text-secondary"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body d-flex align-items-center justify-content-center overflow-hidden">
+            <!-- Contenido off canvas -->
+            <div class="row">
+                <div class="col sidenav-content">
+                    <img src="../assets/img/wmnt-degrade-c.png" class="logo mb-5" alt="Wamnet logo">
+    
+                    <h2 class="">Bienvenido, @nombre</h2>
+                    <h4 class="fw-normal ">¿Con qué podemos ayudarlo hoy?</h4>
+                    
+                    <nav class="sidenav-options">
+                      <ul>
+                        <li>
+                          <a href="./nuevo_requerimiento.html" class="fs-4 text-primary m-1 text-decoration-none">Nuevo Requerimiento</a>
+                        </li>
+                        <li>
+                          <a href="#" class="fs-4 text-primary m-1 text-decoration-none position-relative">
+                            Historial de requerimientos
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                              <span class="visually-hidden">New alerts</span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Fin Contenido off canvas -->
+        </div>
+    </div>
+  </header>
+
+  <main class="container-fluid h-100">
+  <!-- <main class="container-fluid contenedor-principal"> -->
+
+    <div class="container-fluid contenedor-principal">
+
+   
+      
+
+
+    <!-- Contenido principal (parte reemplazable) -->
+
+
+      <h4 class="">
+        Historial de requerimientos
+      </h4>
+      <button type="submit" class="btn btn-primary mt-3">
+        <img src="../assets/img/filtro..svg" alt="Icono de filtro">
+         Filtrar
+      </button>
+      <div class="row">
+        <div class="col-12 col-lg-6 mt-3">
+          <input type="text" class="form-control" placeholder="Por palabra">
+        </div>
+        <div class="col-6 col-lg-3 mt-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Por estado</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-6 col-lg-3 mt-3">
+          <input class="form-control" type="date">
+        </div>
+        <div class="col-12 mt-2">
+          <button type="submit" class="btn btn-primary me-2 mt-3">Aplicar</button>
+          <button type="submit" class="btn btn-outline-primary me-2 mt-3">Limpiar</button>
+        </div>
+      </div>
+
+      <!-- Tabla -->
+      <div class="mt-5 mb-5 contenedor-tabla">
+
+      
+      <table class="table table-striped border">
+        <thead>
+            <tr>
+                <th class="border index">#</th>
+                <th class="border fecha">Fecha</th>
+                <th class="border titulo">Titulo</th>
+                <th class="border estado">Estado</th>
+                <th class="border acciones">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border">$int</td>
+                <td class="border">$fecha</td>
+                <td class="border">$titulo</td>
+                <td class="border">$estado</td>
+                <td class="border">
+                    <a href="./detalle_requerimiento.html" class="me-3">
+                        <i class="fa-solid fa-eye position-relative">
+                          <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                          </span>
+                        </i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="border">2</td>
+                <td class="border">12-09-2023</td>
+                <td class="border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium itaque incidunt reiciendis</td>
+                <td class="border">$Pendiente</td>
+                <td class="border">
+                    <a href="./detalle_requerimiento.html" class="me-3">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="border">$int</td>
+                <td class="border">$fecha</td>
+                <td class="border">$titulo</td>
+                <td class="border">$Resuelto</td>
+                <td class="border">
+                    <a href="./detalle_requerimiento.html" class="me-3">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+    <!-- FIN Contenido principal (parte reemplazable) -->
+
+
+
+  </div>
+
+  </main>
+
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

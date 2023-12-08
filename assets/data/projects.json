@@ -28,6 +28,34 @@
         "download_url" : ""
     },
     {
+        "title" : "Wamnet Requerimientos",
+        "description" : "Frontend hecho en bootstrap para una aplicación real de toma de requerimientos de WamNet, empresa en la cual hice mi práctica profesionalizante. El diseño es de mi compañera Belén Mazzoli, y el desarrollo fue mío.",
+        "img" : "./assets/img/wmnt-requerimientos.png",
+        "type" : "web site",
+        "technology" : "bootstrap",
+        "status" : "finished",
+        "host" : "",
+        "hosted_in" : "",
+        "visit_url" : "/demo/views/login.html",
+        "windowed" : false,
+        "code_url" : "",
+        "download_url" : ""
+    },
+    {
+        "title" : "Wamnet Portfolio",
+        "description" : "Portfolio dinámico creado como producto de venta de la empresa Wamnet",
+        "img" : "./assets/img/wmnt-portfolio.png",
+        "type" : "web site",
+        "technology" : "React",
+        "status" : "finished",
+        "host" : "Temporal",
+        "hosted_in" : "Wamnet private server",
+        "visit_url" : "https://wmnt.ar/portfolio/",
+        "windowed" : false,
+        "code_url" : "",
+        "download_url" : ""
+    },
+    {
         "title" : "Node API REST",
         "description" : "This is an API developed with my Team as an extracurricular project of the subject 'Web Integrations' of our career as 'programming technique' Teclab.",
         "img" : "./assets/img/api.png",

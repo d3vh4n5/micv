@@ -1,0 +1,31 @@
+.contenedor-tabla{
+    overflow-x: auto;
+}
+
+table{
+    overflow-x: scroll;
+    margin: 0 !important; 
+}
+
+.index{
+    width: 40px;
+}
+
+.fecha{
+    width: 20%;
+    min-width: 110px;
+}
+
+.estado{
+    width: 20%;
+    min-width: 120px;
+}
+
+.titulo{
+    min-width: 400px;
+}
+
+.acciones{
+    width: 90px;
+    min-width: 90px;
+}

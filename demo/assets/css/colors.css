@@ -1,0 +1,21 @@
+:root{
+    --bg-primary: #23A6F0;
+}
+.btn-primary{
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+}
+.text-primary{
+    color: var(--bg-primary) !important;
+}
+.btn-outline-primary{
+    color: var(--bg-primary);
+    border: 1px solid var(--bg-primary);
+}
+.border-primary{
+    border-color: var(--bg-primary) !important;
+}
+
+.bg-wmnt{
+    background-color: #00494E;
+}
