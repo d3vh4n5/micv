@@ -35,22 +35,26 @@ const retornarCardHTML = (objeto)=>{
     const tecnologia = objeto.technology
     let borderImageSource = techColors[tecnologia] || "var(--colorAcento), var(--colorFuente)";
 
-    return `
-        <div class="tarjeta" style="border-image-source: linear-gradient(45deg, ${borderImageSource});">
-            <img class="imgTarjeta" src="${objeto.img}" alt="Project image">
-            <div class="descripcionTarjeta">
-                <h4>"${objeto.title}"</h4>
-                <p>${objeto.description}</p>
-                ${visit}
-                ${download}
-                ${code}
-                <br>
-                <p class="status">
-                    status: ${status}
-                </p>
+    if (!objeto.visible){
+        return '';
+    }else{
+        return `
+            <div class="tarjeta" style="border-image-source: linear-gradient(45deg, ${borderImageSource});">
+                <img class="imgTarjeta" src="${objeto.img}" alt="Project image">
+                <div class="descripcionTarjeta">
+                    <h4>"${objeto.title}"</h4>
+                    <p>${objeto.description}</p>
+                    ${visit}
+                    ${download}
+                    ${code}
+                    <br>
+                    <p class="status">
+                        status: ${status}
+                    </p>
+                </div>
             </div>
-        </div>
-    `
+        `
+    }
 }
 
 

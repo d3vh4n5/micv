@@ -1,7 +1,8 @@
 [
     {
+        "visible" : true,
         "title" : "Mercado Lan",
-        "description" : "e-commerce de prueba desarrollado en php",
+        "description" : "e-commerce developed in the 'Web development' subjet in at Teclab",
         "img" : "./assets/img/mercadolan.png",
         "type" : "web site",
         "technology" : "php",
@@ -14,22 +15,25 @@
         "download_url" : ""
     },
     {
+        "visible" : false,
         "title" : "Tools tracker",
-        "description" : "Sistema de gestión de herramientas y ordenes de trabajo para una empresa",
+        "description" : "Tool and work order management system for a company",
         "img" : "./assets/img/tt.png",
         "type" : "web site",
         "technology" : "php",
         "status" : "finished",
         "host" : "Temporal",
         "hosted_in" : "https://ar.000webhost.com/",
-        "visit_url" : "https://pruebatestapp.000webhostapp.com/",
+        "visit_url" : "",
+        "visit_url2" : "https://pruebatestapp.000webhostapp.com/",
         "windowed" : false,
         "code_url" : "",
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "Wamnet Requerimientos",
-        "description" : "Frontend hecho en bootstrap para una aplicación real de toma de requerimientos de WamNet, empresa en la cual hice mi práctica profesionalizante. El diseño es de mi compañera Belén Mazzoli, y el desarrollo fue mío.",
+        "description" : "Demo of the front-end made in bootstrap for a real requirements app I made at WamNet",
         "img" : "./assets/img/wmnt-requerimientos.png",
         "type" : "web site",
         "technology" : "bootstrap",
@@ -42,8 +46,9 @@
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "Wamnet Portfolio",
-        "description" : "Portfolio dinámico creado como producto de venta de la empresa Wamnet",
+        "description" : "Dynamic portfolio created as a sales product for the Wamnet company",
         "img" : "./assets/img/wmnt-portfolio.png",
         "type" : "web site",
         "technology" : "React",
@@ -56,6 +61,7 @@
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "Node API REST",
         "description" : "This is an API developed with my Team as an extracurricular project of the subject 'Web Integrations' of our career as 'programming technique' Teclab.",
         "img" : "./assets/img/api.png",
@@ -70,6 +76,7 @@
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "Arbeit",
         "description" : "UX-UI Design of a mobile app.",
         "img" : "./assets/img/arbeit.png",
@@ -84,6 +91,7 @@
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "Tkinter CRUD",
         "description" : "CRUD desktop app developed in Python. It only works in Windows.",
         "img" : "./assets/img/crudcacpython.png",

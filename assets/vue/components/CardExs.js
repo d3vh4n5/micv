@@ -5,7 +5,7 @@ const CardExs = {
         project: Object,
     },
     template: `
-        <div class="carta">
+        <div class="carta" v-if="project.visible">
             <div class="back" ref="back">
                 <p>
                     {{ project.description }}

@@ -1,5 +1,6 @@
 [
     {
+        "visible" : true,
         "title" : "Django page",
         "description" : "Django page for learning",
         "img" : "./assets/img/crudalumnos.png",
@@ -14,6 +15,7 @@
         "download_url" : ""
     },
     {
+        "visible" : false,
         "title" : "DRF Mini Api",
         "description" : "Mini django rest framework API.",
         "img" : "./assets/img/api.jpg",
@@ -28,6 +30,7 @@
         "download_url" : ""
     },
     {
+        "visible" : false,
         "title" : "React",
         "description" : "Exercise page for learning React",
         "img" : "./assets/img/reactweb.png",
@@ -42,6 +45,7 @@
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "Frutería Lunaranja",
         "description" : "React version of an exercise made in JS for the asignature 'Develope Interface' of my career in Teclab.",
         "img" : "./assets/img/lunaranja.png",
@@ -56,6 +60,7 @@
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "Vue chat + Socket API",
         "description" : "This is a chat app developed in Vue, using a socket API done by me with node, socket.io, express, cors and morgan",
         "img" : "https://i0.wp.com/blog.webtraining.zone/wp-content/uploads/2018/01/curso-profesional-vue.jpg?resize=825%2C510&ssl=1",
@@ -70,6 +75,7 @@
         "download_url" : ""
     },
     {
+        "visible" : true,
         "title" : "BanCode",
         "description" : "This is a console app developed in java, as a final work of a java course I made.",
         "img" : "./assets/img/bancode.png",
@@ -78,12 +84,13 @@
         "status" : "developing",
         "host" : "",
         "hosted_in" : "",
-        "visit_url" : "",
+        "visit_url" : "https://github.com/d3vh4n5/JavaLearn/tree/main/clases/tp",
         "windowed" : false,
         "code_url" : "not yet",
         "download_url" : "not yet compiled"
     },
     {
+        "visible" : false,
         "title" : "CV Redirector",
         "description" : "Mini Web App de registros y redirección con estilo retro. Hace uso del método GET para obtener información y registrarla en la DB.",
         "img" : "./assets/img/scv.png",
