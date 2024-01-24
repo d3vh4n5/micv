@@ -47,10 +47,6 @@ const retornarCardHTML = (objeto)=>{
                     ${visit}
                     ${download}
                     ${code}
-                    <br>
-                    <p class="status">
-                        status: ${status}
-                    </p>
                 </div>
             </div>
         `

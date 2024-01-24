@@ -396,7 +396,7 @@ main{
 .tarjeta{
     all: unset;
     position: relative;
-    filter: opacity(.4) blur(1.5px);
+    filter: opacity(.9) blur(1px);
     margin: 10px;
     width: var(--anchoTarjeta);
     height: calc(var(--anchoTarjeta)/1.8);
@@ -441,9 +441,24 @@ summary:hover{
     transition: .5s;
     width: 100%;
 }
+.descripcionTarjeta p{
+    margin-bottom: 10px;
+}
 .descripcionTarjeta h4{
     color: var(--colorAcento);
 }
+.descripcionTarjeta a{
+    margin-right: 10px;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+.descripcionTarjeta a:first-of-type{
+    background-color: royalblue;
+}
+.descripcionTarjeta a:last-child{
+    background-color: rgb(18, 0, 48);
+}
+
 .status{
     background-color: rgba(10, 10, 10, 0.6);
     padding: .5rem;
@@ -480,10 +495,9 @@ summary:hover{
 
 /*============CONTACTO===================*/
 .contact{
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
-    min-height: fit-content;
-    height: 80%;
     padding: 20px;
     /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(
         circle at 33% 10%,
